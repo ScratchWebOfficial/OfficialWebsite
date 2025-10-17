@@ -1,0 +1,1107 @@
+.shopify-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.shopify-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.shopify-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.shopify-left .blue-text {
+    color: #007bff;
+}
+
+.shopify-left p {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+}
+
+.shopify-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.shopify-btn:hover {
+    background-color: #0056b3;
+}
+
+.shopify-right {
+    flex: 1;
+    min-width: 320px;
+    text-align: center;
+}
+
+.shopify-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.woo-ideal-section {
+    width: 100%;
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.woo-ideal-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0b1c39;
+}
+
+.woo-underline {
+    width: 60px;
+    border: 2px solid #007bff;
+    margin: 10px auto 40px;
+}
+
+.woo-ideal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.woo-ideal-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.woo-ideal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.2);
+}
+
+.woo-ideal-card img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.woo-ideal-card h3 {
+    font-size: 18px;
+    color: #0b1c39;
+    margin-bottom: 10px;
+}
+
+.woo-ideal-card p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.woo-discover {
+    font-size: 14px;
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.woo-discover:hover {
+    text-decoration: underline;
+}
+
+.woo-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.woo-btn:hover {
+    background-color: #0056b3;
+}
+
+.shopify-services-section {
+    padding: 80px 5%;
+    background: url("../assets/shopify-bg.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.shopify-services-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.shopify-service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.shopify-service-card {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shopify-service-card img {
+    height: 48px;
+    margin-bottom: 15px;
+}
+
+.shopify-service-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.shopify-service-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.shopify-service-card a {
+    color: #f15a24;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.shopify-service-btn {
+    margin-top: 40px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shopify-service-btn:hover {
+    background-color: #0056b3;
+}
+
+/* WooCommerce Ideal Section */
+.woo-ideal-section {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.woo-ideal-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0b1c39;
+}
+
+.woo-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    border: none;
+    margin: 0 auto 40px auto;
+}
+
+.woo-ideal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.woo-ideal-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.woo-ideal-card:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.woo-ideal-card:hover a {
+    color: #fff;
+}
+
+.woo-ideal-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.woo-ideal-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.woo-ideal-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.woo-discover {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.woo-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.woo-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Shopify Services Section */
+.shopify-services-section {
+    padding: 80px 5%;
+    background-image: url("../assets/shopify-bg.jpg");
+    /* adjust path */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.shopify-services-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.shopify-services-section hr {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    border: none;
+    margin: 0 auto 40px auto;
+}
+
+.shopify-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.shopify-service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.shopify-service-card:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.shopify-service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.shopify-service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.shopify-service-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.shopify-service-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.shopify-service-card:hover a {
+    color: #fff;
+}
+
+.woo-ideal-card {
+    background-color: #007bff;
+    /* Blue background */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    /* Make text white */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.woo-ideal-card:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: translateY(-5px);
+}
+
+.woo-ideal-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+    /* Makes the icon white */
+}
+
+.woo-ideal-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.woo-ideal-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: white;
+}
+
+.woo-discover {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+}
+
+.shopify-services-section {
+    padding: 80px 5%;
+    background: url("../assets/laptop-bg.jpg") no-repeat center center/cover;
+    text-align: center;
+}
+
+.shopify-services-section h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.shopify-logo {
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.shopify-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.shopify-service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.shopify-service-card:hover {
+    transform: translateY(-5px);
+}
+
+.shopify-service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.shopify-service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #0b1c39;
+}
+
+.shopify-service-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #1e1e1e;
+}
+
+.shopify-explore {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.shopify-talk-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 26px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shopify-talk-btn:hover {
+    background-color: #0056b3;
+}
+
+.shopify-services-section {
+    padding: 80px 5%;
+    background-image: url("../assets/shopify-bg.jpg");
+    /* optional background */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+.shopify-services-section h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.shopify-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.shopify-service-card {
+    background-color: white;
+    color: #000;
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.shopify-service-card:hover {
+    transform: translateY(-8px);
+    background-color: #007bff;
+    color: white;
+}
+
+.shopify-service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.shopify-service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.shopify-service-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.shopify-service-card a {
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 500;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.shopify-service-card:hover a {
+    color: white;
+}
+
+.shopify-services-section {
+    padding: 80px 5%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.shopify-services-section h2 {
+    font-size: 32px;
+    color: #0b1c39;
+    margin-bottom: 40px;
+}
+
+.shopify-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.shopify-service-card {
+    background-color: #ffffff;
+    color: #000;
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.shopify-service-card:hover {
+    transform: translateY(-8px);
+    background-color: #007bff;
+    color: white;
+}
+
+.shopify-service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.shopify-service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.shopify-service-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.shopify-service-card a {
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 500;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.shopify-service-card:hover a {
+    color: white;
+}
+
+.shopify-services-section {
+    padding: 80px 5%;
+    color: #fff;
+    text-align: center;
+}
+
+.shopify-services-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.shopify-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Fixed to 3 columns */
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.shopify-service-card {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shopify-service-card img {
+    height: 48px;
+    margin-bottom: 15px;
+}
+
+.shopify-service-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.shopify-service-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.shopify-service-card a {
+    color: #f15a24;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.shopify-service-btn {
+    margin-top: 40px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shopify-service-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive: Switch to 1 column below 768px */
+@media screen and (max-width: 768px) {
+    .shopify-service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.shopify-service-card {
+    background-color: #007bff;
+    /* Blue background */
+    color: #ffffff;
+    /* White text */
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shopify-service-card h3,
+.shopify-service-card p,
+.shopify-service-card a {
+    color: #ffffff;
+}
+
+.shopify-service-card a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* Optional: Hover effect to slightly darken the card */
+.shopify-service-card:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: translateY(-5px);
+}
+
+.shopify-services-section {
+    padding: 80px 5%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.shopify-services-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0b1c39;
+}
+
+.shopify-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3x2 Grid */
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.shopify-service-card {
+    background-color: #007bff;
+    /* Blue Card */
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.shopify-service-card:hover {
+    background-color: #0056b3;
+    transform: translateY(-6px);
+}
+
+.shopify-service-card img {
+    height: 48px;
+    margin-bottom: 15px;
+}
+
+.shopify-service-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.shopify-service-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.shopify-service-card a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.shopify-service-btn {
+    margin-top: 40px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shopify-service-btn:hover {
+    background-color: #0056b3;
+}
+
+.shopify-industries-section {
+    padding: 80px 5% 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.shopify-industries-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.shopify-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    border: none;
+    margin: 0 auto 40px;
+}
+
+.shopify-industries-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.industry-card {
+    text-align: center;
+    max-width: 150px;
+}
+
+.industry-card img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.industry-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.shopify-benefit-section {
+    padding: 80px 5%;
+    background-color: #f8f9fb;
+    text-align: center;
+}
+
+.shopify-benefit-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #1e1e1e;
+}
+
+.shopify-benefit-section .blue-text {
+    color: #007bff;
+}
+
+.shopify-benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shopify-benefit-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.shopify-benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.1);
+}
+
+.shopify-benefit-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #0b1c39;
+}
+
+.shopify-benefit-card p {
+    font-size: 14px;
+    color: #1e1e1e;
+    line-height: 1.6;
+}
+
+.shopify-benefit-btn {
+    margin-top: 40px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 28px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shopify-benefit-btn:hover {
+    background-color: #0056b3;
+}
+
+.shopify-benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns fixed */
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.shopify-benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Fixed 2-column layout */
+    gap: 30px;
+    justify-content: center;
+    /* Center grid items horizontally */
+    align-items: stretch;
+    max-width: 900px;
+    margin: 0 auto;
+    /* Center the whole grid container */
+}
+
+.shopify-benefit-card {
+    background-color: white;
+    color: #000;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.shopify-benefit-card:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.shopify-benefit-card:hover h3,
+.shopify-benefit-card:hover p {
+    color: white;
+}
+
+.shopify-benefit-section {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.shopify-benefit-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0b1c39;
+}
+
+.shopify-benefit-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.shopify-benefit-card {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.shopify-benefit-card:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.shopify-benefit-card:hover h3,
+.shopify-benefit-card:hover p {
+    color: #ffffff;
+}
+
+.shopify-benefit-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #0b1c39;
+}
+
+.shopify-benefit-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.shopify-benefit-btn {
+    margin-top: 50px;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shopify-benefit-btn:hover {
+    background-color: #0056b3;
+}
+
+.shopify-benefit-grid {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+@media (max-width: 768px) {
+    .shopify-benefit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.shopify-industries-section {
+    width: 100%;
+    padding: 80px 5%;
+    background: #fff;
+    text-align: center;
+}
+
+.shopify-industries-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.industry-card {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-5px);
+}
+
+.industry-card img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.industry-card p {
+    font-weight: 600;
+    color: #111;
+}
+
+.shopify-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 40px;
+    border-radius: 5px;
+}

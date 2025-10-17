@@ -1,0 +1,172 @@
+/* Base Layout */
+.laravel-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.laravel-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.laravel-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.laravel-left .blue-text {
+    color: #007bff;
+}
+
+.laravel-left p {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.laravel-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.laravel-btn:hover {
+    background-color: #0056b3;
+}
+
+.laravel-right {
+    flex: 1;
+    min-width: 320px;
+    text-align: center;
+}
+
+.laravel-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* PHP Highlights Section */
+.php-highlights-section {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.php-highlights-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 10px;
+}
+
+.php-highlights-section .blue-text {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .laravel-left h1 {
+        font-size: 40px;
+    }
+
+    .laravel-left p {
+        font-size: 16px;
+    }
+
+    .laravel-btn {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .laravel-hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .laravel-left {
+        padding-right: 0;
+    }
+
+    .laravel-left h1 {
+        font-size: 32px;
+    }
+
+    .laravel-left p {
+        font-size: 15px;
+    }
+
+    .laravel-btn {
+        padding: 12px 24px;
+    }
+
+    .php-highlights-section h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .laravel-left h1 {
+        font-size: 28px;
+    }
+
+    .laravel-left p {
+        font-size: 14px;
+    }
+
+    .laravel-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .php-highlights-section h2 {
+        font-size: 26px;
+    }
+}
+
+/* Reduce top & bottom padding for all sections */
+.laravel-hero-section,
+.php-highlights-section {
+    padding: 60px 5%;
+    /* reduced from 80px */
+}
+
+/* Optional: reduce margin between headings and other elements */
+.laravel-left h1,
+.php-highlights-section h2 {
+    margin-bottom: 16px;
+    /* previously 20px or 30px */
+}
+
+.laravel-left p {
+    margin-bottom: 20px;
+    /* reduced from 30px */
+}
+
+.php-highlights-section h2 {
+    margin-bottom: 8px;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+    margin-bottom: 40px;
+    /* reduce this as needed */
+}

@@ -1,0 +1,118 @@
+$(document).ready(function(){
+
+	//------ wow ------//
+    new WOW().init();
+	$('.subjectslider').slick({
+		arrows: false,
+		centerMode: true,
+		centerPadding: '0',
+		dots: true,
+		infinite: true,
+		speed: 300,
+		rows: 2,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		responsive: [
+		    {
+		      breakpoint: 1023,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		]
+	});
+
+	$("#websiteindustryText").click(function(){
+		$("#websiteindustryList").slideToggle();
+	});
+
+});
+
+//#####################################
+//  Code added by Rakesh 
+//#####################################
+
+    function gywPassStep(opt) {
+        var fd = new FormData();
+
+        var websitetype=$('input[name="websitetype"]:checked').val();
+        var websiteindustry=$('#websiteindustry').val();
+        var websiteexample=$('input[name="websiteexample"]:checked').val();
+        var websitepagesList = $('input[name="websitepages"]:checked');
+        var websitepagesListArr = [];
+		for(var i=0; i<websitepagesList.length; i++) {
+    		// console.log($(websitepagesList[i]).val());
+    		websitepagesListArr.push($(websitepagesList[i]).val());
+		}
+        var websiteexpectedtime=$('input[name="websiteexpectedtime"]:checked').val();
+        var websitebudget=$('input[name="websitebudget"]:checked').val();
+
+        fd.append('opt',opt);
+        fd.append('websitetype',websitetype);
+        fd.append('websiteindustry',websiteindustry);
+        fd.append('websiteexample',websiteexample);
+        fd.append('websitepagesList',websitepagesListArr);
+        fd.append('websiteexpectedtime',websiteexpectedtime);
+        fd.append('websitebudget',websitebudget);
+
+        $.ajax({
+            url:baseurl+'/main_ajax/gyw-assist1.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#gywStepsResult').html(data);
+                }
+            }
+        });
+    }
+
+
+    $("#websiteindustryList > li").click(function () {       
+		var livalue = $(this).val();
+		var litext = $(this).text();
+		$("#websiteindustryList").slideToggle();
+		$("#websiteindustry").val(livalue);
+		$("#websiteindustryText").val(litext);
+	});
+
+
+
+
+    function previewTheme(thisid) {
+        var fd = new FormData();
+
+        fd.append('themeid',thisid);
+
+        $.ajax({
+            url:baseurl+'/main_ajax/gyw-step3-assist1.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#previewThemeModalContent').html(data);
+                }
+            }
+        });
+    }

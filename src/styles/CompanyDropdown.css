@@ -1,0 +1,371 @@
+.company-dropdown {
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    min-width: 210px;
+    background: #13294b;
+    color: #fff;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.13);
+    z-index: 101;
+    animation: fadeDown 0.13s ease-in-out;
+    font-family: inherit;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.company-dropdown ul {
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+}
+
+.company-dropdown li {
+    color: #e7e7e7;
+    font-size: 1.03rem;
+    padding: 10px 30px 10px 24px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.company-dropdown li::before {
+    content: "›";
+    color: #ff9301;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+}
+
+.company-dropdown li:hover {
+    color: #ff9301;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Mobile Responsive */
+@media (max-width: 750px) {
+    .company-dropdown {
+        min-width: 85vw;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 7px 7px;
+    }
+
+    .company-dropdown li {
+        font-size: 1.08rem;
+        padding: 14px 16px 14px 32px;
+    }
+
+    .company-dropdown li::before {
+        left: 12px;
+    }
+}
+
+.company-dropdown {
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    min-width: 210px;
+    background: #13294b;
+    color: #ffffff;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.13);
+    z-index: 101;
+    animation: fadeDown 0.13s ease-in-out;
+    font-family: inherit;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.company-dropdown ul {
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+}
+
+.company-dropdown li {
+    font-size: 1.03rem;
+    padding: 10px 30px 10px 24px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* Make link text white */
+.company-dropdown li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: color 0.2s ease;
+}
+
+/* Arrow styling */
+.company-dropdown li::before {
+    content: "›";
+    color: #ff9301;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition: color 0.2s ease;
+}
+
+/* Hover state */
+.company-dropdown li:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.company-dropdown li:hover a {
+    color: #ff9301;
+}
+
+.company-dropdown li:hover::before {
+    color: #ff9301;
+}
+
+/* Mobile Responsive */
+@media (max-width: 750px) {
+    .company-dropdown {
+        min-width: 85vw;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 7px 7px;
+    }
+
+    .company-dropdown li {
+        font-size: 1.08rem;
+        padding: 14px 16px 14px 32px;
+    }
+
+    .company-dropdown li::before {
+        left: 12px;
+    }
+}
+
+.company-dropdown {
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    min-width: 210px;
+    background: #13294b;
+    color: #ffffff;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.13);
+    z-index: 101;
+    animation: fadeDown 0.13s ease-in-out;
+    font-family: inherit;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.company-dropdown ul {
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+}
+
+.company-dropdown li {
+    font-size: 1.03rem;
+    padding: 10px 30px 10px 24px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* Ensure link text is white */
+.company-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: color 0.2s ease;
+}
+
+/* Add arrow styling */
+.company-dropdown li::before {
+    content: "›";
+    color: #ff9301;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition: color 0.2s ease;
+}
+
+/* Hover state */
+.company-dropdown li:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.company-dropdown li:hover .company-link {
+    color: #ff9301;
+}
+
+.company-dropdown li:hover::before {
+    color: #ff9301;
+}
+
+/* Mobile Responsive */
+@media (max-width: 750px) {
+    .company-dropdown {
+        min-width: 85vw;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 7px 7px;
+    }
+
+    .company-dropdown li {
+        font-size: 1.08rem;
+        padding: 14px 16px 14px 32px;
+    }
+
+    .company-dropdown li::before {
+        left: 12px;
+    }
+}
+
+/* Ensures link text is white */
+.company-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: color 0.2s ease;
+}
+
+/* On hover */
+.company-dropdown li:hover .company-link {
+    color: #ff9301;
+}
+
+.company-dropdown {
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    min-width: 210px;
+    background: #13294b;
+    color: #ffffff;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.13);
+    z-index: 101;
+    animation: fadeDown 0.13s ease-in-out;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.company-dropdown ul {
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+    /* 🔥 REMOVE bullet points */
+}
+
+.company-dropdown li {
+    font-size: 1.03rem;
+    padding: 10px 30px 10px 24px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* White link text */
+.company-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: color 0.2s ease;
+}
+
+/* Arrow icon */
+.company-dropdown li::before {
+    content: "›";
+    color: #ff9301;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.company-dropdown li:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.company-dropdown li:hover .company-link {
+    color: #ff9301;
+}
+
+.company-dropdown li:hover::before {
+    color: #ff9301;
+}
+
+/* Mobile view */
+@media (max-width: 750px) {
+    .company-dropdown {
+        min-width: 85vw;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 7px 7px;
+    }
+
+    .company-dropdown li {
+        font-size: 1.08rem;
+        padding: 14px 16px 14px 32px;
+    }
+
+    .company-dropdown li::before {
+        left: 12px;
+    }
+}

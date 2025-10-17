@@ -1,0 +1,726 @@
+.react-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: #ffffff;
+    flex-wrap: wrap;
+}
+
+.react-hero-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.react-hero-left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.react-hero-left p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.react-btn {
+    background-color: #0076ff;
+    color: white;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.react-hero-right {
+    flex: 1;
+    text-align: center;
+}
+
+.react-hero-right img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.blue-text {
+    color: #0076ff;
+}
+
+.react-standout-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: #cce6ff;
+    padding: 4rem 2rem;
+}
+
+.react-standout-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.react-standout-left h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1d1d1d;
+    position: relative;
+}
+
+.react-standout-left h2 span {
+    color: #0076ff;
+}
+
+.standout-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.standout-feature img {
+    width: 40px;
+    height: 40px;
+    margin-top: 0.3rem;
+}
+
+.standout-feature h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: #333;
+}
+
+.standout-feature p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.cta-talk-btn {
+    background: #0076ff;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.react-standout-right {
+    flex: 1;
+    text-align: center;
+}
+
+.react-standout-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.react-standout-section {
+    width: 100vw;
+    /* Full width of viewport */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: #cce6ff;
+    padding: 4rem 6%;
+    box-sizing: border-box;
+}
+
+.react-nutshell-section {
+    background: #ffffff;
+    padding: 4rem 6%;
+    text-align: center;
+}
+
+.react-nutshell-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1d1d1d;
+    position: relative;
+}
+
+.nutshell-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nutshell-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.nutshell-card img {
+    width: 40px;
+    margin-bottom: 1rem;
+}
+
+.nutshell-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.nutshell-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.react-nutshell-section {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 4rem 6%;
+    background: #ffffff;
+}
+
+.react-nutshell-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1d1d1d;
+    text-align: center;
+}
+
+.nutshell-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+.nutshell-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.nutshell-card img {
+    width: 40px;
+    margin-bottom: 1rem;
+}
+
+.nutshell-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.nutshell-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.cta-talk-btn {
+    background: #0076ff;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 2rem auto 0;
+    display: block;
+    cursor: pointer;
+}
+
+.nutshell-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.react-industries-section {
+    background-color: #2c333c;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.react-industries-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.react-industries-section h2 .blue-text {
+    color: #0076ff;
+}
+
+.industries-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+}
+
+.industry-card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.industry-card p {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: white;
+}
+
+.react-industries-full-wrapper {
+    width: 100vw;
+    background-color: #2c333c;
+    overflow-x: hidden;
+}
+
+.react-industries-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.react-industries-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.react-industries-section .blue-text {
+    color: #0076ff;
+}
+
+.industries-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+}
+
+.industry-card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.industry-card p {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: white;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+    margin: 2rem 0;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 18);
+    /* if 9 logos x2 loop */
+    animation: scroll 40s linear infinite;
+}
+
+.slide {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .nutshell-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .industries-grid {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .standout-feature {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.react-rely-section {
+    background: #f2f2f2;
+    padding: 4rem 6%;
+    text-align: center;
+}
+
+.react-rely-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1d1d1d;
+}
+
+.rely-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.rely-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.rely-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.rely-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.react-rely-wrapper {
+    width: 100vw;
+    background: #f2f2f2;
+    overflow-x: hidden;
+}
+
+.react-rely-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.react-rely-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+.rely-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 2rem;
+}
+
+.rely-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.rely-card:hover {
+    transform: translateY(-5px);
+}
+
+.rely-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.rely-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+/* === React Industries Section === */
+.react-industries-section {
+    background-color: #2c333c;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.react-industries-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.react-industries-section h2 .blue-text {
+    color: #0076ff;
+}
+
+/* full-width centered grid */
+.industries-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    background: transparent;
+    padding: 1rem;
+}
+
+.industry-card img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.industry-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+    .industries-grid {
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .industry-card {
+        width: 140px;
+    }
+}
+
+@media (max-width: 600px) {
+    .industries-grid {
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .industry-card {
+        width: 120px;
+    }
+
+    .industry-card img {
+        width: 50px;
+    }
+
+    .industry-card p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* ========== Responsive Tweaks ========== */
+
+/* ===== Tablets (landscape ~1024px) ===== */
+@media (max-width: 1024px) {
+  .react-hero-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .react-btn,
+  .cta-talk-btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.95rem;
+  }
+
+  .industries-grid {
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .industry-card {
+    width: 140px;
+  }
+
+  .nutshell-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rely-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .react-standout-section,
+  .react-rely-section {
+    padding: 3rem 4%;
+  }
+
+  .react-standout-left h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ===== Tablets & Large Phones (portrait ~768px) ===== */
+@media (max-width: 768px) {
+  .react-hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .react-hero-left,
+  .react-hero-right {
+    max-width: 100%;
+    flex: unset;
+  }
+
+  .react-hero-left h1 {
+    font-size: 2.2rem;
+  }
+
+  .react-standout-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .react-standout-left,
+  .react-standout-right {
+    max-width: 100%;
+  }
+
+  .nutshell-grid,
+  .rely-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-card {
+    width: 120px;
+  }
+
+  .industry-card img {
+    width: 50px;
+  }
+
+  .industry-card p {
+    font-size: 0.9rem;
+  }
+
+  .standout-feature {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ===== Mobile Phones (< 600px) ===== */
+@media (max-width: 600px) {
+  .react-hero-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .react-hero-left p {
+    font-size: 1rem;
+  }
+
+  .react-btn,
+  .cta-talk-btn {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+
+  .react-standout-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .industry-card {
+    width: 100px;
+  }
+
+  .industry-card img {
+    width: 40px;
+  }
+
+  .industry-card p {
+    font-size: 0.85rem;
+  }
+
+  .nutshell-card,
+  .rely-card {
+    padding: 1.5rem;
+  }
+
+  .nutshell-card h4,
+  .rely-card h4 {
+    font-size: 1rem;
+  }
+
+  .nutshell-card p,
+  .rely-card p {
+    font-size: 0.9rem;
+  }
+}

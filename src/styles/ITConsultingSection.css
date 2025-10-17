@@ -1,0 +1,82 @@
+.itconsulting-section {
+    padding: 80px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.itconsulting-header h2 {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.itconsulting-header h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+}
+
+.itconsulting-header .underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 30px;
+}
+
+.itconsulting-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.it-card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.it-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.it-card .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: #fff;
+    text-align: left;
+}
+
+.it-card h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.it-card p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.it-card button {
+    padding: 10px 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.it-card button:hover {
+    background-color: #0056cc;
+}

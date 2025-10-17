@@ -1,0 +1,564 @@
+
+    //****************************************************************
+    //   Detect current location(Country) for phone number prefix
+    //****************************************************************
+
+    var country = null, countryCode = null, city = null, cityAlt = null;
+
+    // function showPosition(incomingurl) {
+    function showPosition2() {
+        // Store the element where the page displays the result
+        result2 = document.getElementById("resultlocation");
+        // window.ajaxurl1=incomingurl;
+        
+        // If geolocation is available, try to get the visitor's position
+        if(navigator.geolocation) {
+            // result2.innerHTML = "Getting the position information...";
+            // result2.innerHTML = "Please allow browser to detect location.";
+            // locationErrorPopup('Please allow browser to detect location.');
+            navigator.geolocation.getCurrentPosition(successCallback2, errorCallback);
+        } else {
+            alert("Sorry, your browser does not support HTML5 geolocation.");
+        }
+    }
+    
+    // Define callback function for successful attempt
+    function successCallback2(position) {
+        currentLat= position.coords.latitude;
+        currentLong= position.coords.longitude;
+
+
+
+
+
+
+
+
+                    var fd1 = new FormData();
+                    fd1.append('currCountryCode','IN');
+                    fd1.append('prefixid','custphone1_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd1,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone1_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+
+                    // setTimeout('', 3000);
+                    var fd2 = new FormData();
+                    fd2.append('currCountryCode','IN');
+                    fd2.append('prefixid','custphone2_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd2,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone2_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd3 = new FormData();
+                    fd3.append('currCountryCode','IN');
+                    fd3.append('prefixid','custphone3_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd3,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone3_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd4 = new FormData();
+                    fd4.append('currCountryCode','IN');
+                    fd4.append('prefixid','custphone4_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd4,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone4_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd5 = new FormData();
+                    fd5.append('currCountryCode','IN');
+                    fd5.append('prefixid','custphone5_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd5,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone5_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd6 = new FormData();
+                    fd6.append('currCountryCode','IN');
+                    fd6.append('prefixid','custphone6_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd6,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone6_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd7 = new FormData();
+                    fd7.append('currCountryCode','IN');
+                    fd7.append('prefixid','consultcustphone_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd7,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#consultcustphone_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd8 = new FormData();
+                    fd8.append('currCountryCode','IN');
+                    fd8.append('prefixid','jobsignupphone_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd8,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#jobsignupphone_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd9 = new FormData();
+                    fd9.append('currCountryCode','IN');
+                    fd9.append('prefixid','jobapplyphone_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd9,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#jobapplyphone_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+
+
+
+
+
+
+
+
+
+
+                    
+
+        latlng = new google.maps.LatLng(currentLat, currentLong);         
+
+        new google.maps.Geocoder().geocode({'latLng' : latlng}, function(results, status) {
+
+            if (status == google.maps.GeocoderStatus.OK) {
+                if (results[1]) {
+                    var country = null, countryCode = null, city = null, cityAlt = null;
+                    
+                    var c, lc, component;
+                    for (var r = 0, rl = results.length; r < rl; r += 1) {
+                        var result = results[r];
+
+                        if (!city && result.types[0] === 'locality') {
+                            for (c = 0, lc = result.address_components.length; c < lc; c += 1) {
+                                component = result.address_components[c];
+
+                                if (component.types[0] === 'locality') {
+                                    city = component.long_name;
+                                    break;
+                                }
+                            }
+                        } else if (!city && !cityAlt && result.types[0] === 'administrative_area_level_1') {
+                            for (c = 0, lc = result.address_components.length; c < lc; c += 1) {
+                                component = result.address_components[c];
+
+                                if (component.types[0] === 'administrative_area_level_1') {
+                                    cityAlt = component.long_name;
+                                    break;
+                                }
+                            }
+                        } else if (!country && result.types[0] === 'country') {
+                            country = result.address_components[0].long_name;
+                            countryCode = result.address_components[0].short_name;
+                        }
+
+                        if (city && country) {
+                            break;
+                        }
+                    }
+
+                    // result2.innerHTML = "Latitude: "+currentLat+", "+"Longitude: "+currentLong+", City: "+city+", Country: "+country;
+                    result2.innerHTML="";
+
+
+                    // const prefixForms = ["custphone1_prefix", "custphone2_prefix", "custphone3_prefix", "custphone4_prefix", "custphone5_prefix", "custphone6_prefix"];
+                    // const prefixForms = ["custphone1_prefix", "custphone4_prefix"];
+
+/*
+                    prefixForms.forEach(function() {
+                        elemtext="#"+elem+"_selectedIso";
+                        // var fd1 = new FormData();
+                        // fd1.append('currCountryCode',countryCode);
+                        // fd1.append('prefixid',elem);
+                        $.ajax({
+                            url:baseurl+'/main_ajax/country-select-assist1.php',
+                            data:{'currCountryCode':countryCode, 'prefixid':elem},
+                            contentType: false,
+                            processData: false,
+                            type: 'POST',
+                            success:function(data){
+                                if(!data.error){
+                                    $(elemtext).html(data);
+                                }
+                            }
+                        });
+                        setTimeout('', 3000);
+                        console.log(elem);
+                    });
+*/
+                    console.log('countryCode:'+countryCode);
+
+                    var fd1 = new FormData();
+                    fd1.append('currCountryCode',countryCode);
+                    fd1.append('prefixid','custphone1_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd1,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone1_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+
+                    // setTimeout('', 3000);
+                    var fd2 = new FormData();
+                    fd2.append('currCountryCode',countryCode);
+                    fd2.append('prefixid','custphone2_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd2,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone2_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd3 = new FormData();
+                    fd3.append('currCountryCode',countryCode);
+                    fd3.append('prefixid','custphone3_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd3,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone3_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd4 = new FormData();
+                    fd4.append('currCountryCode',countryCode);
+                    fd4.append('prefixid','custphone4_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd4,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone4_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd5 = new FormData();
+                    fd5.append('currCountryCode',countryCode);
+                    fd5.append('prefixid','custphone5_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd5,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone5_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd6 = new FormData();
+                    fd6.append('currCountryCode',countryCode);
+                    fd6.append('prefixid','custphone6_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd6,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone6_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd7 = new FormData();
+                    fd7.append('currCountryCode',countryCode);
+                    fd7.append('prefixid','consultcustphone_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd7,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#consultcustphone_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd8 = new FormData();
+                    fd8.append('currCountryCode',countryCode);
+                    fd8.append('prefixid','jobsignupphone_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd8,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#jobsignupphone_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd9 = new FormData();
+                    fd9.append('currCountryCode',countryCode);
+                    fd9.append('prefixid','jobapplyphone_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd9,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#jobapplyphone_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+
+                }
+            } else {
+                result2.innerHTML = "Error Status: " + status;
+            }
+        });    
+    }
+    
+    // Define callback function for failed attempt
+    function errorCallback(error) {
+        if(error.code == 1) {
+            // alert('You\'ve decided not to share your location, Please allow to share your location for better job suggestion.');
+            // result2.innerHTML = "You've decided not to share your location, Please allow to share your location for easy form submit.";
+            // locationErrorPopup('You\'ve decided not to share your location, Please allow to share your location for easy form submit.');
+        } else if(error.code == 2) {
+            // result2.innerHTML = "The network is down or the positioning service can't be reached.";
+            // locationErrorPopup('The network is down or the positioning service can\'t be reached.');
+        } else if(error.code == 3) {
+            // result2.innerHTML = "The attempt timed out before it could get the location data.";
+            // locationErrorPopup('The attempt timed out before it could get the location data.');
+        } else {
+            // result2.innerHTML = "Geolocation failed due to unknown error.";
+            // locationErrorPopup('Geolocation failed due to unknown error.');
+        }
+                    var countryCode = 'IN';
+                    var fd1 = new FormData();
+                    fd1.append('currCountryCode',countryCode);
+                    fd1.append('prefixid','custphone1_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd1,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone1_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+
+                    // setTimeout('', 3000);
+                    var fd2 = new FormData();
+                    fd2.append('currCountryCode',countryCode);
+                    fd2.append('prefixid','custphone2_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd2,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone2_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd3 = new FormData();
+                    fd3.append('currCountryCode',countryCode);
+                    fd3.append('prefixid','custphone3_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd3,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone3_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd4 = new FormData();
+                    fd4.append('currCountryCode',countryCode);
+                    fd4.append('prefixid','custphone4_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd4,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone4_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd5 = new FormData();
+                    fd5.append('currCountryCode',countryCode);
+                    fd5.append('prefixid','custphone5_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd5,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone5_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd6 = new FormData();
+                    fd6.append('currCountryCode',countryCode);
+                    fd6.append('prefixid','custphone6_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd6,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#custphone6_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd7 = new FormData();
+                    fd7.append('currCountryCode',countryCode);
+                    fd7.append('prefixid','consultcustphone_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd7,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#consultcustphone_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd8 = new FormData();
+                    fd8.append('currCountryCode',countryCode);
+                    fd8.append('prefixid','jobsignupphone_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd8,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#jobsignupphone_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+                    var fd9 = new FormData();
+                    fd9.append('currCountryCode',countryCode);
+                    fd9.append('prefixid','jobapplyphone_prefix');
+                    $.ajax({
+                        url:baseurl+'/main_ajax/country-select-assist1.php',
+                        data:fd9,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#jobapplyphone_prefix_selectedIso').html(data);
+                            }
+                        }
+                    });
+
+    }
+
+
+    
+
+
+
+

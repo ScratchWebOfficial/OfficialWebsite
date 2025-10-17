@@ -1,0 +1,721 @@
+.flutter-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.flutter-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.flutter-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.flutter-left .blue-text {
+    color: #007bff;
+}
+
+.flutter-left p {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.flutter-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.flutter-btn:hover {
+    background-color: #0056b3;
+}
+
+.flutter-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+}
+
+.flutter-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flutter-benefits-section {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.flutter-benefits-section h2 {
+    font-size: 26px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #0b1c39;
+}
+
+.flutter-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.benefit-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 32px;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #0b1c39;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.benefit-card a {
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.benefit-button-wrapper {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .flutter-hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .flutter-left {
+        padding-right: 0;
+    }
+
+    .flutter-left h1 {
+        font-size: 36px;
+    }
+
+    .flutter-left p {
+        font-size: 16px;
+    }
+
+    .flutter-btn {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+.flutter-left {
+    max-width: 600px;
+}
+
+.flutter-benefits-section {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.flutter-benefits-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.flutter-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.benefit-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 32px;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0b1c39;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.benefit-card a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.benefit-button-wrapper {
+    text-align: center;
+}
+
+.benefit-button-wrapper .flutter-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+.flutter-services-section {
+    background-color: #2e3338;
+    color: #ffffff;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.flutter-services-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.flutter-services-section .blue-text {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 4px;
+}
+
+.flutter-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.flutter-service-card {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.flutter-service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.flutter-service-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.flutter-service-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.flutter-service-card a {
+    color: #ff6600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.service-button-wrapper {
+    text-align: center;
+}
+
+.service-button-wrapper .flutter-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-button-wrapper .flutter-btn:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 992px) {
+    .flutter-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flutter-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flutter-service-card .service-icon img {
+    width: 100px;
+    /* Increase width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 16px;
+    /* Add spacing below */
+}
+
+.flutter-service-card .service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flutter-industries-section {
+    background-color: #d8ebff;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.flutter-industries-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 50px;
+}
+
+.flutter-industries-section .blue-text {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 4px;
+}
+
+.industry-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.industry-card {
+    text-align: center;
+    max-width: 140px;
+}
+
+.industry-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.industry-card p {
+    font-size: 16px;
+    color: #1e1e1e;
+    font-weight: 600;
+}
+
+.flutter-benefitbywordsystech-section {
+    background-color: #f5f6f8;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.flutter-benefitbywordsystech-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 50px;
+}
+
+.benefitbywordsystech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.benefitbywordsystech-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.benefitbywordsystech-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    opacity: 0.15;
+}
+
+.benefitbywordsystech-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0b1c39;
+    margin-bottom: 12px;
+}
+
+.benefitbywordsystech-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.benefitbywordsystech-button {
+    text-align: center;
+}
+
+.benefitbywordsystech-button .flutter-btn {
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.benefitbywordsystech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2x2 layout */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefitbywordsystech-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.benefitbywordsystech-card:hover {
+    background-color: #007bff;
+    /* Blue background on hover */
+    color: #fff;
+    /* White text on hover */
+    transform: translateY(-5px);
+}
+
+.benefitbywordsystech-card:hover h3,
+.benefitbywordsystech-card:hover p {
+    color: #fff;
+}
+
+.benefitbywordsystech-card img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .benefitbywordsystech-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 10px;
+    }
+
+    .benefitbywordsystech-card {
+        padding: 24px;
+    }
+
+    .benefitbywordsystech-card img {
+        width: 70px;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .benefitbywordsystech-card h3 {
+        font-size: 16px;
+    }
+
+    .benefitbywordsystech-card p {
+        font-size: 14px;
+    }
+
+    .benefitbywordsystech-button .flutter-btn {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flutter-benefitbywordsystech-section {
+        padding: 60px 20px;
+    }
+
+    .benefitbywordsystech-card img {
+        width: 60px;
+        margin-bottom: 12px;
+    }
+
+    .benefitbywordsystech-card h3 {
+        font-size: 15px;
+    }
+
+    .benefitbywordsystech-card p {
+        font-size: 13px;
+    }
+
+    .benefitbywordsystech-button .flutter-btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .flutter-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flutter-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flutter-benefits-section {
+        padding: 50px 20px;
+    }
+
+    .flutter-benefits-section h2 {
+        font-size: 22px;
+    }
+
+    .benefit-card {
+        padding: 24px 16px;
+    }
+
+    .benefit-icon {
+        font-size: 28px;
+    }
+
+    .benefit-card h3 {
+        font-size: 16px;
+    }
+
+    .benefit-card p {
+        font-size: 13px;
+    }
+
+    .benefit-button-wrapper .flutter-btn {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+}
+
+.industry-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    overflow-x: auto;
+    /* Enable horizontal scroll if needed */
+    padding-bottom: 10px;
+}
+
+.industry-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.industry-grid::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 3px;
+}
+
+.industry-card {
+    text-align: center;
+    min-width: 140px;
+    flex-shrink: 0;
+    /* Prevent from shrinking */
+}
+
+.industry-grid {
+    display: flex;
+    justify-content: flex-start;
+    /* Align items from the start */
+    align-items: center;
+    gap: 50px;
+    /* Adjust spacing between images */
+    flex-wrap: nowrap;
+    /* Keep in one line */
+    overflow-x: auto;
+    /* Allow horizontal scrolling on small screens */
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.industry-card {
+    flex: 0 0 auto;
+    /* Do not grow/shrink */
+    text-align: center;
+    min-width: 120px;
+    /* Fixed width for alignment */
+}
+
+.industry-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.industry-grid::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+.industry-grid {
+    display: flex;
+    justify-content: center;
+    /* Center the whole row */
+    align-items: center;
+    gap: 30px;
+    /* spacing between items */
+    flex-wrap: nowrap;
+    /* prevent wrapping */
+    overflow-x: auto;
+    /* horizontal scroll on small screens */
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.industry-card {
+    flex: 0 0 auto;
+    /* prevent shrinking */
+    width: 150px;
+    height: 140px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.industry-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.industry-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+
+
+
+.industry-grid {
+    display: flex;
+    justify-content: center;
+    /* Center all cards horizontally */
+    align-items: center;
+    flex-wrap: nowrap;
+    /* Disable wrapping */
+    overflow-x: auto;
+    /* Enable horizontal scroll */
+    gap: 30px;
+    /* Space between items */
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.industry-card {
+    flex: 0 0 auto;
+    /* Prevent flexbox resizing */
+    width: 150px;
+    height: 140px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.industry-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.industry-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.industry-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.industry-grid::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 4px;
+}

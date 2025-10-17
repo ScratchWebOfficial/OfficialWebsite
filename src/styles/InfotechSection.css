@@ -1,0 +1,646 @@
+.infotech-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.infotech-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.infotech-left h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.4;
+    color: #0a1e35;
+}
+
+.infotech-left .blue {
+    color: #007bff;
+}
+
+.infotech-left p {
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.meeting-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.8rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.meeting-btn:hover {
+    background-color: #0056d2;
+}
+
+.infotech-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 280px;
+}
+
+.infotech-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.infotech-features-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: #fff;
+}
+
+.infotech-feature-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.infotech-feature-card img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.infotech-feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #0a1e35;
+}
+
+.infotech-feature-card .blue {
+    color: #007bff;
+}
+
+.infotech-feature-card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.infotech-solutions-section {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.infotech-solutions-section .sub-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.infotech-solutions-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.infotech-solutions-section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 5px;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.solution-card {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+}
+
+.solution-card img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.solution-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.solution-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.infotech-benefits-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.benefit-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.benefit-item img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.benefit-item h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1e35;
+}
+
+.highlight-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.sub-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.sub-text::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 5px;
+}
+
+.description {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.know-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.know-more-btn:hover {
+    background-color: #0056d2;
+}
+
+.infotech-efficiency-section {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.infotech-efficiency-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+
+.infotech-efficiency-section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 5px;
+}
+
+.efficiency-list {
+    list-style: none;
+    padding: 0;
+    margin: 3rem auto 0;
+    max-width: 980px;
+    text-align: left;
+}
+
+.efficiency-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.efficiency-list .tick {
+    color: #ff6600;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.infotech-brandstory-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.brandstory-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.brandstory-left h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a1e35;
+    margin-bottom: 0.5rem;
+}
+
+.brandstory-left .blue {
+    color: #007bff;
+}
+
+.brandstory-left .underline {
+    width: 100px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.brandstory-left h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.brandstory-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.continue-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.7rem 1.8rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-btn:hover {
+    background-color: #0056d2;
+}
+
+.brandstory-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 280px;
+}
+
+.brandstory-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 200px 0 0;
+}
+
+.infotech-blog-section {
+    background: #f9f9f9;
+    padding: 4rem 2rem;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.blog-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+.blog-header .underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.see-all-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.see-all-btn:hover {
+    background-color: #0056d2;
+}
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.blog-date {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.blog-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #007bff;
+    line-height: 1.4;
+}
+
+.blog-desc {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.blog-read-btn {
+    align-self: flex-start;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.blog-read-btn:hover {
+    background-color: #0056d2;
+}
+
+/* Full-page, centered Solutions section */
+.infotech-solutions-section {
+    min-height: 100vh;
+    /* take full screen height */
+    display: flex;
+    /* center block content */
+    flex-direction: column;
+    justify-content: center;
+    /* vertical center */
+    align-items: center;
+    /* horizontal center */
+    text-align: center;
+    padding: 4rem 1.5rem;
+    /* keep some breathing room */
+}
+
+/* Center the grid container and limit its width */
+.infotech-solutions-section .solutions-grid {
+    width: 100%;
+    max-width: 1200px;
+    /* optional: contain width */
+    margin: 2rem auto 0;
+    /* center horizontally */
+    justify-content: center;
+    /* center grid tracks if narrower */
+}
+
+/* Ensure viewport math behaves */
+html,
+body {
+    height: 100%;
+}
+
+/* Full-page, perfectly centered Solutions section */
+.infotech-solutions-section {
+    /* take a full row inside the flex wrapper and span full width */
+    flex: 0 0 100%;
+    width: 100%;
+    align-self: stretch;
+
+    /* fill the viewport height (mobile-safe override last) */
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    /* center everything */
+    display: grid;
+    place-items: center;
+    /* vertical + horizontal center */
+    text-align: center;
+
+    /* keep side padding, remove vertical so it can truly be full-height */
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+/* Center the grid and cap its width nicely */
+.infotech-solutions-section .solutions-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    justify-content: center;
+}
+
+/* Make the Benefits section a full-width, full-height slice */
+html,
+body {
+    height: 100%;
+}
+
+.infotech-benefits-section {
+    /* break out of the hero flex row and span full width */
+    flex: 0 0 100%;
+    width: 100%;
+    align-self: stretch;
+
+    /* fill the viewport */
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    /* perfect centering */
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+    /* remove extra vertical padding so 100vh truly fits */
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+/* Center the three benefit items as a block */
+.infotech-benefits-section .benefit-icons {
+    width: 100%;
+    max-width: 1200px;
+    /* contain line length nicely */
+    margin: 0 auto 2rem;
+    /* center the row */
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    gap: clamp(1.25rem, 5vw, 6rem);
+}
+
+/* Keep each item tidy and centered */
+.infotech-benefits-section .benefit-item {
+    text-align: center;
+    margin: 0;
+}
+
+/* Full-page, centered "Better Insights For Your Business" */
+html,
+body {
+    height: 100%;
+}
+
+.infotech-efficiency-section {
+    /* break out of the hero flex row and span full width */
+    flex: 0 0 100%;
+    width: 100%;
+    align-self: stretch;
+
+    /* fill the viewport (mobile-safe dvh) */
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    /* center section content */
+    display: grid;
+    place-items: center;
+    /* centers horizontally (and vertically) */
+    text-align: center;
+
+    /* keep width padding only so 100vh truly fits */
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+/* keep the list block centered with a nice max width */
+.infotech-efficiency-section .efficiency-list {
+    max-width: 980px;
+    margin: 2rem auto 0;
+    /* centers the list container */
+}
+
+/* Tighter spacing for the "Better Insights For Your Business" section */
+.infotech-efficiency-section .sub-heading {
+    margin-bottom: 0.25rem;
+    /* was larger */
+    line-height: 1.15;
+}
+
+.infotech-efficiency-section h2 {
+    margin: 0.25rem 0 0.75rem;
+    /* was ~0.5rem top + default bottom */
+    line-height: 1.2;
+}
+
+.infotech-efficiency-section h2::after {
+    margin-top: 0.35rem;
+    /* bring underline closer */
+    height: 2px;
+    /* slightly slimmer underline */
+}
+
+.infotech-efficiency-section .efficiency-list {
+    margin-top: 1.2rem;
+    /* was 3rem — reduces gap to bullets */
+}
+
+.infotech-efficiency-section .efficiency-list li {
+    margin-bottom: 0.9rem;
+    /* tighter spacing between bullets */
+}

@@ -1,0 +1,94 @@
+.digital-marketing-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 80px 5%;
+    flex-wrap: wrap;
+}
+
+.digital-marketing-left {
+    flex: 1;
+    min-width: 320px;
+}
+
+.digital-marketing-left h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.blue-text {
+    color: #007bff;
+}
+
+.marketing-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.marketing-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.marketing-card:hover {
+    transform: translateY(-5px);
+}
+
+.white-card {
+    background: #fff;
+    color: #1e1e1e;
+}
+
+.dark-card {
+    background: #0b1c39;
+    color: #fff;
+}
+
+.marketing-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.orange-icon {
+    color: #f05a28;
+}
+
+.white-icon {
+    color: #fff;
+}
+
+.digital-marketing-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digital-marketing-right img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.digital-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    padding-top: 60px;
+    /* ↓ Added to push the image down */
+}
+
+.digital-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    margin-top: 40px;
+}

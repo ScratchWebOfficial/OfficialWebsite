@@ -1,0 +1,449 @@
+.digitalmarketing-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.digitalmarketing-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.digitalmarketing-content h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #0c1e35;
+    margin-bottom: 1rem;
+}
+
+.highlight-blue {
+    color: #1677ff;
+}
+
+.digitalmarketing-content p {
+    font-size: 1.05rem;
+    color: #111;
+    margin-bottom: 1.8rem;
+}
+
+.digitalmarketing-btn {
+    background-color: #1677ff;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.digitalmarketing-image {
+    flex: 1;
+    text-align: center;
+}
+
+.digitalmarketing-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .digitalmarketing-hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .digitalmarketing-content {
+        margin-bottom: 2rem;
+    }
+}
+
+.digitalmarketing-steps-section {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.steps-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.steps-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.bold-black {
+    color: #0c1e35;
+    font-weight: 700;
+}
+
+.steps-left p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+
+.steps-right {
+    flex: 1;
+    text-align: center;
+}
+
+.steps-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .digitalmarketing-steps-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .steps-left {
+        margin-bottom: 2rem;
+    }
+}
+
+.digitalmarketing-noise-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #fff;
+}
+
+.digitalmarketing-noise-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.noise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.noise-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.noise-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.noise-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+}
+
+/* Optional hover effect */
+.noise-item:hover img {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+.noise-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+
+.noise-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.noise-item:hover img {
+    transform: scale(1.05);
+}
+
+.noise-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 12, 12, 0.75);
+    color: #fff;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.noise-item:hover .noise-overlay {
+    opacity: 1;
+}
+
+.noise-overlay h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.noise-overlay p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #eee;
+}
+
+.digitalmarketing-upgrade-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.digitalmarketing-upgrade-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.digitalmarketing-upgrade-section p {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.upgrade-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.upgrade-card {
+    background-color: #1677ff;
+    color: #fff;
+    padding: 2rem 1.5rem;
+    transform: skewY(-2deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.upgrade-card:hover {
+    transform: skewY(0deg) scale(1.03);
+}
+
+.upgrade-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.upgrade-card h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.upgrade-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.digitalmarketing-blog-section {
+    padding: 4rem 2rem;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.blog-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.blog-card {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: left;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1rem;
+}
+
+.blog-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.blog-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+}
+
+.blog-content p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.blog-content button {
+    background-color: #1677ff;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 3px;
+}
+
+.blog-slider-nav {
+    font-size: 1.5rem;
+    color: #ff5a3c;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Blog Section */
+.digitalmarketing-blog-section {
+    padding: 4rem 2rem;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.blog-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 360px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1.5rem;
+}
+
+.blog-content h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #0c1e35;
+}
+
+.blog-date {
+    font-size: 0.9rem;
+    color: #777;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.blog-content p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.blog-content button {
+    background-color: #1677ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blog-content button:hover {
+    background-color: #0f5fd0;
+}
+
+.blog-slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: #1677ff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.blog-slider-nav span.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card {
+        width: 100%;
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,790 @@
+.reactnative-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.reactnative-hero-left {
+    flex: 1;
+    max-width: 50%;
+}
+
+.reactnative-hero-left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.reactnative-hero-left .blue-text {
+    color: #1677ff;
+}
+
+.reactnative-hero-left p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #111827;
+    max-width: 90%;
+}
+
+.reactnative-btn {
+    background-color: #1677ff;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reactnative-btn:hover {
+    background-color: #005bd1;
+}
+
+.reactnative-hero-right {
+    flex: 1;
+    text-align: center;
+}
+
+.reactnative-hero-right img {
+    width: 100%;
+    max-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .reactnative-hero-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .reactnative-hero-left,
+    .reactnative-hero-right {
+        max-width: 100%;
+    }
+
+    .reactnative-hero-left h1 {
+        font-size: 2.2rem;
+    }
+
+    .reactnative-hero-left p {
+        font-size: 1rem;
+        margin: 1rem auto 1.5rem;
+    }
+
+    .reactnative-btn {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+.reactnative-benefits-section {
+    background-color: #c9e7ff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.reactnative-benefits-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.highlight-blue {
+    color: #1677ff;
+}
+
+.reactnative-benefits-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.reactnative-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    flex: 1;
+}
+
+.benefit-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    color: #ff6600;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.benefit-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.reactnative-benefits-image {
+    flex: 1;
+    text-align: center;
+}
+
+.reactnative-benefits-image img {
+    width: 100%;
+    max-width: 450px;
+}
+
+.cta-button {
+    margin-top: 2rem;
+    grid-column: span 2;
+    background-color: #1677ff;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005bd1;
+}
+
+.reactnative-benefits-image img {
+    width: 100%;
+    max-width: 600px;
+    /* increased from 450px to 600px */
+    height: auto;
+}
+
+.reactnative-benefits-image {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reactnative-benefits-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.reactnative-benefits-image img {
+    width: 100%;
+    max-width: 600px;
+    /* You can adjust this size if needed */
+    height: auto;
+}
+
+.reactnative-benefits-image {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reactnative-benefits-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.reactnative-services-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.reactnative-services-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.reactnative-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 1rem;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.service-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.cta-button {
+    margin-top: 2.5rem;
+    background-color: #1677ff;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005bd1;
+}
+
+.reactnative-benefits-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .reactnative-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .reactnative-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.reactnative-industries-section {
+    background-color: #2d333a;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.reactnative-industries-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.reactnative-industries-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.industry-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.industry-card p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.reactnative-industries-section {
+    width: 100vw;
+    background-color: #2d333a;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.reactnative-industries-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.reactnative-industries-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    overflow-x: auto;
+    padding: 0 2rem;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 150px;
+}
+
+.industry-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.industry-card p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .reactnative-industries-grid {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+.reactnative-benefitbywordsystech-section {
+    background-color: #f5f7f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.reactnative-benefitbywordsystech-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.benefitbywordsystech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto 3rem;
+}
+
+.benefitbywordsystech-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.benefitbywordsystech-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefitbywordsystech-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.benefitbywordsystech-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .benefitbywordsystech-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.reactnative-benefitbywordsystech-section {
+    background-color: #f5f7f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.reactnative-benefitbywordsystech-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.benefitbywordsystech-horizontal {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+}
+
+.benefitbywordsystech-card {
+    background-color: #fff;
+    min-width: 300px;
+    flex: 1;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.benefitbywordsystech-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefitbywordsystech-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.benefitbywordsystech-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.cta-button {
+    background-color: #1677ff;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #005bd1;
+}
+
+.benefitbywordsystech-horizontal {
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    flex-wrap: wrap;
+    /* wrap on smaller screens */
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    /* center container & add bottom space */
+}
+
+.reactnative-benefitbywordsystech-section {
+    background-color: #f5f7f9;
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background-color: #1677ff;
+    /* blue background */
+    color: #ffffff;
+    /* white text */
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    color: #ffffff;
+    /* white icon on blue */
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.benefit-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #f0f0f0;
+}
+
+.benefit-card:hover {
+    background-color: #005bd1;
+}
+
+.benefitby-card {
+    background-color: #ffffff;
+    color: #111827;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.benefitby-card:hover {
+    background-color: #1677ff;
+    /* Blue on hover */
+    color: #ffffff;
+    /* White text on hover */
+}
+
+.benefitby-card:hover h4,
+.benefitby-card:hover p {
+    color: #ffffff;
+}
+
+.reactnative-benefitby-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #111827;
+}
+
+.service-card:hover {
+    background-color: #1677ff;
+    /* Blue background on hover */
+    color: #ffffff;
+    /* Text turns white */
+}
+
+.service-card:hover h4,
+.service-card:hover p {
+    color: #ffffff;
+}
+
+.service-card:hover img {
+    filter: brightness(0) invert(1);
+    /* Make icons white if they are images */
+}
+
+.benefitby-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #111827;
+}
+
+.benefitby-card:hover {
+    background-color: #1677ff;
+    /* Turn card blue on hover */
+    color: #ffffff;
+}
+
+.benefitby-card:hover h4,
+.benefitby-card:hover p {
+    color: #ffffff;
+}
+
+.benefitby-card:hover img {
+    filter: brightness(0) invert(1);
+    /* Makes the icon white on blue */
+}
+
+.service-card {
+    background-color: #1677ff;
+    /* Set card background to blue */
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.service-card h4,
+.service-card p {
+    color: white;
+}
+
+.reactnative-benefitby-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.reactnative-benefitby-card:hover {
+    background-color: #1677ff;
+    color: #fff;
+}
+
+.reactnative-benefitby-card:hover h4,
+.reactnative-benefitby-card:hover p {
+    color: #fff;
+}
+
+.reactnative-benefitby-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    transition: filter 0.3s ease;
+}
+
+.reactnative-benefitby-card:hover img {
+    filter: brightness(0) invert(1);
+    /* makes white icons on blue background */
+}
+
+.reactnative-benefitby-card {
+    background-color: #ffffff;
+    color: #111827;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.reactnative-benefitby-card:hover {
+    background-color: #1677ff;
+    color: #ffffff;
+}
+
+.reactnative-benefitby-card:hover h4,
+.reactnative-benefitby-card:hover p {
+    color: #ffffff;
+}
+
+.reactnative-benefitby-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    transition: filter 0.3s ease;
+}
+
+.reactnative-benefitby-card:hover img {
+    filter: brightness(0) invert(1);
+    /* Converts icon color to white on blue background */
+}
+
+.service-card {
+    background-color: #1677ff;
+    /* blue background */
+    color: white;
+    /* white text */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+/* Make text inside white */
+.service-card h4,
+.service-card p {
+    color: white;
+}
+
+/* Make icons (images) white too */
+.service-card img {
+    filter: brightness(0) invert(1);
+}
+
+/* Optional: retain hover animation without color change */
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.service-card {
+    background-color: #1677ff;
+    /* permanent blue background */
+    color: white;
+    /* white text */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+/* Ensure heading and paragraph are white */
+.service-card h4,
+.service-card p {
+    color: white;
+}
+
+/* Convert icons/images inside to white */
+.service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
+    /* makes the icon white */
+}
+
+/* Optional hover effect without changing color */
+.service-card:hover {
+    transform: translateY(-5px);
+}

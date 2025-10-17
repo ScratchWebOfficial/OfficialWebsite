@@ -1,0 +1,94 @@
+.ourwork-dropdown {
+    display: block;
+    position: absolute;
+    top: 40px;
+    /* adjust if your navbar is taller */
+    left: 0;
+    min-width: 220px;
+    background: #13294b;
+    color: #ffffff;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.13);
+    z-index: 105;
+    animation: fadeDown 0.13s;
+    font-family: inherit;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ourwork-dropdown ul {
+    margin: 0;
+    padding: 7px 0;
+    list-style: none;
+}
+
+.ourwork-dropdown li {
+    font-size: 1.04rem;
+    padding: 12px 28px 12px 23px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.17s, background 0.13s;
+}
+
+.ourwork-dropdown li:before {
+    content: "›";
+    color: #ff9301;
+    position: absolute;
+    left: 8px;
+    top: 13px;
+    font-size: 16px;
+}
+
+/* White link color */
+.dropdown-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.17s ease;
+}
+
+.dropdown-link:hover {
+    color: #ff9301;
+}
+
+.ourwork-dropdown li:hover {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 600px) {
+    .ourwork-dropdown {
+        min-width: 88vw;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 6px 6px;
+    }
+
+    .ourwork-dropdown li {
+        font-size: 1.12rem;
+        padding: 17px 10px 17px 24px;
+    }
+}
+
+.ourwork-dropdown li a {
+    color: #ffffff;
+    /* Make the link text white */
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: color 0.17s ease;
+}
+
+.ourwork-dropdown li:hover a {
+    color: #ff9301;
+    /* Orange on hover */
+}

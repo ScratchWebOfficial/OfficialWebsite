@@ -1,0 +1,535 @@
+.vue-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: #ffffff;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.vue-hero-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.vue-hero-left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.vue-hero-left p {
+    font-size: 1.1rem;
+    color: #1d1d1d;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.vue-btn {
+    background-color: #0076ff;
+    color: white;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vue-hero-right {
+    flex: 1;
+    text-align: center;
+}
+
+.vue-hero-right img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.blue-text {
+    color: #0076ff;
+}
+
+.vue-benefits-section {
+    background: #2e3339;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.vue-benefits-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.vue-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.vue-benefit-card {
+    background: #ffffff;
+    color: #000;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 340px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.vue-benefit-card img {
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.vue-benefit-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.vue-benefit-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.vue-benefit-card a {
+    color: #0076ff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.vue-benefits-btn {
+    margin-top: 3rem;
+}
+
+.vue-benefits-section {
+    background: #2e3339;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.vue-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vue-benefits-section {
+    background-color: #2e3339;
+    color: #fff;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.vue-benefits-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.vue-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.vue-benefit-card {
+    background-color: #fff;
+    color: #000;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.vue-benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.vue-benefit-card h4 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+}
+
+.vue-benefit-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.vue-benefit-card a {
+    color: #0076ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.vue-benefit-card img {
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.vuejs-devservices-section {
+    background-color: #f4f5f7;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.vuejs-devservices-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.vuejs-devservices-section .highlight-blue {
+    color: #0076ff;
+}
+
+.vuejs-devservices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.vuejs-dev-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.vuejs-dev-card:hover {
+    transform: translateY(-5px);
+}
+
+.vuejs-dev-card i {
+    font-size: 2rem;
+    color: #ff6600;
+    margin-bottom: 1rem;
+}
+
+.vuejs-dev-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.vuejs-dev-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.vuejs-dev-card a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.vuejs-devservices-btn {
+    text-align: center;
+}
+
+.vuejs-devservices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Fixed 3 columns */
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+    .vuejs-devservices-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .vuejs-devservices-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.vue-industries-section {
+    background: #d5e9ff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.vue-industries-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.vue-blue {
+    color: #0076ff;
+}
+
+.vue-industries-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+}
+
+.industry-card img {
+    height: 48px;
+    margin-bottom: 1rem;
+}
+
+.industry-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+
+.vue-industries-section {
+    width: 100%;
+    background: #d5e9ff;
+    padding: 5rem 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.vue-industries-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.vue-blue {
+    color: #0076ff;
+}
+
+.vue-industries-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    overflow-x: auto;
+    padding: 0 2rem;
+}
+
+.industry-card {
+    flex: 0 0 auto;
+    text-align: center;
+    min-width: 140px;
+}
+
+.industry-card img {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.industry-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+
+.vue-benefitassoc-section {
+    background: #f7f8f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.vue-benefitassoc-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.vue-benefitassoc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.benefitassoc-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.benefitassoc-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefitassoc-card img {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.benefitassoc-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.benefitassoc-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.vue-benefitassoc-btn {
+    margin-top: 2rem;
+}
+
+.vue-benefitassoc-section {
+    background: #f7f8f9;
+    padding: 4rem 2rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.vue-benefitassoc-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.vue-benefitassoc-horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    scroll-behavior: smooth;
+}
+
+.benefitassoc-card {
+    flex: 0 0 300px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.benefitassoc-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefitassoc-card img {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.benefitassoc-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.benefitassoc-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.vue-benefitassoc-btn {
+    margin-top: 2rem;
+}
+
+.vue-benefitassoc-section {
+    background: #f7f8f9;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.vue-benefitassoc-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+
+.vue-benefitassoc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+}
+
+.benefitassoc-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefitassoc-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefitassoc-card img {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.benefitassoc-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.benefitassoc-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.vue-benefitassoc-btn {
+    text-align: center;
+}

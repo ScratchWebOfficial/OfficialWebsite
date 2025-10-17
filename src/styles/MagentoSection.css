@@ -1,0 +1,566 @@
+.magento-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.magento-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.magento-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.magento-left .blue-text {
+    color: #007bff;
+}
+
+.magento-left p {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.magento-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.magento-btn:hover {
+    background-color: #0056b3;
+}
+
+.magento-right {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.magento-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.magento-reasons-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2f33;
+    color: white;
+    padding: 80px 5%;
+    flex-wrap: wrap;
+}
+
+.magento-logo-side {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.magento-logo-side img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.magento-logo-side h2 {
+    font-size: 48px;
+    color: #ff5c00;
+    font-weight: 500;
+}
+
+.magento-reasons-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+.magento-reasons-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.magento-reasons-content .blue-text {
+    color: #007bff;
+}
+
+.blue-line {
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.magento-reasons-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.magento-reasons-content li {
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+    font-size: 17px;
+}
+
+.magento-reasons-content li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff5c00;
+}
+
+.magento-talk-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.magento-talk-btn:hover {
+    background-color: #0056b3;
+}
+
+.magento-competence-section {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.magento-competence-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+.magento-competence-section .blue-text {
+    color: #007bff;
+}
+
+.magento-competence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.magento-competence-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.magento-competence-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.magento-competence-card img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.magento-competence-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.magento-competence-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.magento-competence-btn-container {
+    margin-top: 50px;
+}
+
+.magento-competence-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.magento-competence-btn:hover {
+    background-color: #0056b3;
+}
+
+.magento-competence-section {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.magento-competence-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0b1c39;
+}
+
+.magento-competence-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 30px;
+    justify-content: center;
+}
+
+.magento-competence-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.magento-competence-card:hover {
+    transform: translateY(-8px);
+}
+
+.magento-competence-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.magento-competence-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 10px;
+}
+
+.magento-competence-card p {
+    font-size: 15px;
+    color: #555;
+}
+
+.magento-competence-btn-container {
+    margin-top: 50px;
+}
+
+.magento-competence-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.magento-competence-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 992px) {
+    .magento-competence-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .magento-competence-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.magento-competence-card {
+    background: #007bff;
+    /* blue background */
+    color: #ffffff;
+    /* white text */
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.magento-competence-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.magento-competence-card p {
+    font-size: 15px;
+    color: #e0e0e0;
+}
+
+.magento-competence-card:hover {
+    transform: translateY(-6px);
+    background-color: #0056b3;
+}
+
+.magento-worth-section {
+    background-color: #e6f2ff;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.magento-worth-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.magento-worth-subtext {
+    font-size: 17px;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+.magento-worth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+}
+
+.worth-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.worth-card img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.worth-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+
+.worth-card p {
+    font-size: 15px;
+    color: #444;
+}
+
+.magento-competence-card {
+    background-color: #007bff;
+    /* Blue background */
+    color: #ffffff;
+    /* White text */
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.magento-competence-card:hover {
+    transform: translateY(-5px);
+}
+
+.magento-competence-card h3,
+.magento-competence-card p {
+    color: #ffffff;
+}
+
+.magento-hire-section {
+    background-color: #f5f6f8;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.magento-hire-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #0b1c39;
+}
+
+.magento-hire-section .blue-text {
+    color: #007bff;
+}
+
+.magento-hire-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.magento-hire-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.magento-hire-card img {
+    height: 60px;
+    margin-bottom: 20px;
+    opacity: 0.1;
+}
+
+.magento-hire-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+}
+
+.magento-hire-card p {
+    font-size: 15px;
+    color: #333;
+}
+
+.magento-hire-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.magento-hire-btn:hover {
+    background-color: #0056b3;
+}
+
+.magento-hire-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* fixed 2 columns */
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.magento-hire-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .magento-hire-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.hire-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    color: #1e1e1e;
+}
+
+.hire-card:hover {
+    background-color: #007bff;
+    /* Blue background */
+    color: #ffffff;
+    /* White text */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.hire-card:hover h3,
+.hire-card:hover p {
+    color: #ffffff;
+    /* Ensure headings and text turn white */
+}
+
+.magento-hire-card {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+}
+
+.magento-hire-card:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: translateY(-6px);
+}
+
+.magento-hire-card:hover h3,
+.magento-hire-card:hover p {
+    color: #ffffff;
+}
+
+
+
+.magento-hire-card {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+}
+
+.magento-hire-card h3,
+.magento-hire-card p {
+    color: #ffffff;
+}
+
+.magento-hire-card img {
+    height: 60px;
+    margin-bottom: 20px;
+    opacity: 1; /* Optional: remove opacity if you want the icons clearly visible */
+}
+
+.magento-hire-card:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-6px);
+}

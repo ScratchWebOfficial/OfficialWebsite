@@ -1,0 +1,401 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px 0 22px;
+    min-height: 68px;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+
+.logo {
+    width: 110px;
+    object-fit: contain;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar-center a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s;
+}
+
+.navbar-center a.active,
+.navbar-center a:hover {
+    color: #1774d2;
+    border-bottom: 2px solid #1774d2;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.contact-item {
+    font-size: 14px;
+}
+
+.nav-btn {
+    padding: 7px 16px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 7px;
+    transition: background 0.2s;
+}
+
+.nav-btn-orange {
+    background: #ff6600;
+}
+
+.nav-btn-blue {
+    background: #1774d2;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 34px;
+    height: 28px;
+    cursor: pointer;
+    margin-left: 12px;
+    z-index: 10001;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #222;
+    border-radius: 2px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.navbar-mobile-actions {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 0;
+        min-height: 56px;
+    }
+
+    .logo {
+        width: 86px;
+    }
+
+    .navbar-center {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 82vw;
+        background: #fff;
+        box-shadow: 0 10px 24px 0 rgba(26, 26, 26, 0.08);
+        padding: 28px 0 28px 24px;
+        z-index: 9999;
+        height: 100vh;
+    }
+
+    .navbar-center.show-mobile {
+        display: flex;
+    }
+
+    .navbar-center a {
+        margin: 9px 0;
+        font-size: 17px;
+        font-weight: 600;
+        width: 100%;
+        padding: 6px 0;
+        border-bottom: none;
+    }
+
+    .navbar-mobile-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 36px;
+    }
+
+    .navbar-right>.contact-item,
+    .navbar-right>.nav-btn-orange,
+    .navbar-right>.nav-btn-blue {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-center {
+        width: 98vw;
+        padding-left: 9vw;
+    }
+
+    .logo {
+        width: 56px;
+    }
+
+    .nav-dropdown-trigger {
+        position: relative;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    @media (max-width: 690px) {
+        .nav-dropdown-trigger {
+            width: 100%;
+        }
+
+        .mega-menu-services {
+            left: 0 !important;
+        }
+    }
+
+    .nav-dropdown-trigger {
+        position: relative;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    /* Stacking on small screens */
+    @media (max-width: 600px) {
+        .nav-dropdown-trigger {
+            width: 100%;
+        }
+
+        .tech-dropdown,
+        .mega-menu-services {
+            left: 0 !important;
+            right: 0 !important;
+            min-width: 90vw;
+            max-width: 99vw;
+            border-radius: 0 0 7px 7px;
+        }
+    }
+
+    .nav-dropdown-trigger {
+        position: relative;
+        cursor: pointer;
+        height: 100%;
+    }
+
+    /* For mobile: stack dropdown full width */
+    @media (max-width: 650px) {
+        .nav-dropdown-trigger {
+            width: 100%;
+        }
+    }
+
+    .nav-dropdown-trigger {
+        position: relative;
+        cursor: pointer;
+        height: 100%;
+    }
+
+    @media (max-width: 750px) {
+        .nav-dropdown-trigger {
+            width: 100%;
+        }
+    }
+
+    .nav-dropdown-trigger {
+        position: relative;
+        cursor: pointer;
+        height: 100%;
+    }
+
+    @media (max-width: 600px) {
+        .nav-dropdown-trigger {
+            width: 100%;
+        }
+    }
+}
+
+/* Keep existing styles, just ensure this section is included or updated */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 14px;
+    z-index: 10001;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #222;
+    border-radius: 2px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Hamburger animation when open */
+.hamburger.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Show hamburger only on small screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-center {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 80vw;
+        height: 100vh;
+        background: #fff;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+        padding: 24px 0 24px 20px;
+        z-index: 9999;
+    }
+
+    .navbar-center.show-mobile {
+        display: flex;
+    }
+
+    .navbar-center a {
+        margin: 10px 0;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    .navbar-mobile-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .navbar-right>.nav-btn-orange,
+    .navbar-right>.nav-btn-blue {
+        display: none;
+    }
+}
+
+/* Inside your Navbar.css */
+
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .mobile-dropdown {
+        padding-left: 10px;
+        padding-top: 10px;
+        background: #f8f8f8;
+        border-left: 2px solid #1774d2;
+        margin-bottom: 12px;
+        border-radius: 4px;
+    }
+
+    .mobile-dropdown>* {
+        padding: 5px 0;
+    }
+
+    .nav-dropdown-trigger span {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 8px 0;
+    }
+}
+
+/* Force dropdown links/text to appear white */
+.mega-menu-services a,
+.mega-menu-services li,
+.mega-menu-services span,
+.tech-dropdown a,
+.tech-dropdown li,
+.tech-dropdown span {
+    color: #ffffff !important;
+}
+
+/* Optional: Hover color for better UX */
+.mega-menu-services a:hover,
+.tech-dropdown a:hover {
+    color: #1774d2 !important;
+    text-decoration: underline;
+}
+
+/* Ensure the background is dark to contrast the white text */
+.mega-menu-services,
+.tech-dropdown {
+    background-color: #0a1d3a !important;
+    /* or the blue shade you used */
+}
+
+/* Optional: If you need bullets or icons visible in white */
+.mega-menu-services li::before,
+.tech-dropdown li::before {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+        /* Increased from 86px */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px;
+        /* Increased from 56px */
+    }
+}

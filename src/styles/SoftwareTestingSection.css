@@ -1,0 +1,346 @@
+/* === Hero Section === */
+.softwareqa-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+    background: #fff;
+}
+
+.softwareqa-content {
+    max-width: 600px;
+    flex: 1;
+}
+
+.softwareqa-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+    color: #0c1e35;
+}
+
+.softwareqa-content .highlight {
+    color: #1677ff;
+}
+
+.softwareqa-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+.softwareqa-btn {
+    background-color: #1677ff;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.softwareqa-image {
+    flex: 1;
+    text-align: center;
+}
+
+.softwareqa-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* === QA Services Features Section === */
+.softwareqa-services-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #fff;
+}
+
+.softwareqa-services-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.highlight-blue {
+    color: #1677ff;
+    font-weight: 600;
+}
+
+.bold-black {
+    color: #0c1e35;
+    font-weight: 700;
+}
+
+.softwareqa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.qa-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.qa-card:hover {
+    transform: translateY(-5px);
+}
+
+.qa-card-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffa366;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* === Rounded Corners === */
+.rounded-top-left {
+    border-top-left-radius: 80px;
+}
+
+.rounded-top-right {
+    border-top-right-radius: 80px;
+}
+
+.rounded-bottom-left {
+    border-bottom-left-radius: 80px;
+}
+
+.rounded-bottom-right {
+    border-bottom-right-radius: 80px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .softwareqa-hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .softwareqa-content {
+        margin-bottom: 2rem;
+    }
+}
+
+.softwareqa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 992px) {
+    .softwareqa-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .softwareqa-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.softwareqa-onestop-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background: #fdfdfd;
+    flex-wrap: wrap;
+}
+
+.onestop-image {
+    flex: 1;
+    text-align: center;
+}
+
+.onestop-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.onestop-content {
+    flex: 1;
+}
+
+.onestop-content h2 {
+    font-size: 1.5rem;
+    color: #1677ff;
+    margin-bottom: 1rem;
+}
+
+.onestop-content p {
+    font-size: 1.3rem;
+    color: #0c1e35;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.onestop-btn {
+    background-color: #1677ff;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .softwareqa-onestop-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .onestop-content {
+        padding: 1rem 0;
+    }
+}
+
+.softwareqa-process-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.softwareqa-process-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.process-subtext {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.process-timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    position: relative;
+}
+
+.process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 160px;
+    text-align: center;
+}
+
+.process-step img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.8rem;
+}
+
+.process-step p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+.softwareqa-detailed-section {
+    display: flex;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+    background: #fefefe;
+}
+
+.qa-left-column {
+    flex: 1;
+    min-width: 320px;
+}
+
+.qa-left-column h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.qa-subtext-bold {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.qa-left-column p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.qa-explore-btn {
+    background-color: #1677ff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.qa-right-column {
+    flex: 1.2;
+    min-width: 340px;
+}
+
+.qa-tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.qa-tab {
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background: #f0f0f0;
+    color: #000;
+    cursor: pointer;
+}
+
+.qa-tab.active {
+    background-color: #1677ff;
+    color: #fff;
+}
+
+.qa-tab-content p {
+    font-size: 0.95rem;
+    color: #222;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .softwareqa-detailed-section {
+        flex-direction: column;
+    }
+
+    .qa-tabs {
+        flex-direction: column;
+    }
+
+    .qa-tab {
+        width: 100%;
+    }
+}

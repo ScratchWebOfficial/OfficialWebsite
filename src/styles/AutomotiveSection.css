@@ -1,0 +1,520 @@
+.automotive-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.automotive-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.automotive-left h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.4;
+    color: #0a1e35;
+}
+
+.automotive-left .blue {
+    color: #007bff;
+}
+
+.automotive-left p {
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    max-width: 500px;
+}
+
+.meeting-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.8rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.meeting-btn:hover {
+    background-color: #0056d2;
+}
+
+.automotive-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 280px;
+}
+
+.automotive-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.automotive-feature-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #007bff;
+    padding: 4rem 2rem;
+    color: #fff;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.automotive-feature-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.automotive-feature-card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.automotive-feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.automotive-feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.automotive-tailored-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    gap: 2rem;
+}
+
+.tailored-left,
+.tailored-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tailored-left h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.tailored-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.2rem;
+    max-width: 95%;
+}
+
+.begin-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.6rem 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.begin-btn:hover {
+    background-color: #0056d2;
+}
+
+.tailored-right h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.tailored-right .blue {
+    color: #007bff;
+}
+
+.tailored-right p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5rem;
+    max-width: 95%;
+}
+
+.tailored-right img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.automotive-needs-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.needs-highlight {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 0.2rem;
+}
+
+.needs-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.4rem;
+}
+
+.underline {
+    width: 60px;
+    height: 2px;
+    background-color: #007bff;
+    margin: 0 auto 1rem;
+}
+
+.needs-subheading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 1rem auto;
+}
+
+.needs-description {
+    font-size: 1rem;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.needs-points {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.point {
+    text-align: center;
+}
+
+.point span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ccc;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.point p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.automotive-icon-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    flex-wrap: wrap;
+    text-align: center;
+
+    /* Horizontal centering */
+    max-width: 1200px;
+    /* Optional: limits width for better layout */
+    margin: 0 auto;
+    /* Horizontally centers this block */
+}
+
+
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.icon-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.8rem;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+.icon-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.4;
+}
+
+.automotive-benefits-section {
+    background-color: #1a1a1a;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-card img {
+    width: 35px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(100%) saturate(500%) hue-rotate(190deg);
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.automotive-benefits-section {
+    background-color: #1a1a1a;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 992px) {
+    .automotive-benefits-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .automotive-benefits-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.benefit-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.benefit-card img {
+    width: 35px;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(100%) saturate(500%) hue-rotate(190deg);
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.automotive-blog-section {
+    padding: 4rem 2rem;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.blog-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.blog-title .blue {
+    color: #007bff;
+}
+
+.blog-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 0.5rem auto 1.5rem;
+}
+
+.blog-subtext {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-date {
+    color: #777;
+    font-size: 0.85rem;
+    padding: 0.8rem 1.2rem 0 1.2rem;
+    text-align: left;
+    width: 100%;
+}
+
+.blog-card h3 {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: 600;
+    padding: 0.4rem 1.2rem;
+    text-align: left;
+}
+
+.blog-card p {
+    font-size: 0.95rem;
+    color: #333;
+    padding: 0 1.2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    margin: 0 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #0056d2;
+}
+
+.needs-heading {
+    margin: 0.25rem auto 0.4rem;
+    /* centers horizontally */
+    width: fit-content;
+    /* shrink to text so auto margins work */
+    text-align: center;
+}
+
+.automotive-needs-section {
+    width: 100%;
+    max-width: 1100px;
+    /* adjust as you like */
+    margin: 0 auto;
+    /* centers the whole section */
+    padding: 4rem 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* make this section span the full row inside the hero flex wrapper */
+.automotive-blog-section {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+/* center the content area */
+.blog-title,
+.blog-underline,
+.blog-subtext,
+.blog-cards-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* constrain and center the cards grid */
+.blog-cards-container {
+    max-width: 1100px;
+    /* adjust as needed */
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Make ALL benefit cards blue permanently */
+.automotive-benefits-section .benefit-card {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Force text to white (titles + body) */
+.automotive-benefits-section .benefit-card h3,
+.automotive-benefits-section .benefit-card p,
+.automotive-benefits-section .benefit-card .blue {
+    color: #fff !important;
+}
+
+/* Make icons white on blue */
+.automotive-benefits-section .benefit-card img {
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
+}
+
+/* If you had a hover style changing colors, lock it */
+.automotive-benefits-section .benefit-card:hover {
+    background: #007bff;
+    color: #fff;
+}

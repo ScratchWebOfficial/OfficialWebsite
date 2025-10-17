@@ -1,0 +1,698 @@
+.ionic-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.ionic-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.ionic-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.ionic-left .blue-text {
+    color: #007bff;
+}
+
+.ionic-left p {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.ionic-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ionic-btn:hover {
+    background-color: #0056b3;
+}
+
+.ionic-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+}
+
+.ionic-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .ionic-hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .ionic-left {
+        padding-right: 0;
+    }
+
+    .ionic-left h1 {
+        font-size: 36px;
+    }
+
+    .ionic-left p {
+        font-size: 16px;
+    }
+
+    .ionic-btn {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+.ionic-services-section {
+    background-color: #f2f8ff;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.ionic-services-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0b1c39;
+}
+
+.ionic-services-section .blue-text {
+    color: #007bff;
+}
+
+.ionic-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.ionic-service-card {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.ionic-service-card:hover {
+    background-color: #e6f0ff;
+    transform: translateY(-5px);
+}
+
+.service-icon img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.ionic-service-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0b1c39;
+}
+
+.ionic-service-card p {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.ionic-service-card a {
+    color: #ff6a00;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.ionic-service-card a:hover {
+    text-decoration: underline;
+}
+
+.ionic-service-button-wrapper {
+    margin-top: 40px;
+}
+
+.ionic-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* fixed 3 columns */
+    gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .ionic-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for tablets */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ionic-services-grid {
+        grid-template-columns: 1fr;
+        /* 1 column for mobile */
+    }
+}
+
+.ionic-industries-section {
+    background-color: #2f363d;
+    padding: 80px 5%;
+    text-align: center;
+    color: white;
+}
+
+.ionic-industries-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.ionic-industries-section .blue-text {
+    color: #007bff;
+}
+
+.ionic-industries-section h2::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.industry-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.industry-card img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.industry-card p {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .industry-grid {
+        gap: 30px;
+    }
+
+    .industry-card img {
+        height: 50px;
+    }
+
+    .ionic-industries-section h2 {
+        font-size: 26px;
+    }
+}
+
+.ionic-industries-section {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #2f363d;
+    padding: 80px 5%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ionic-industries-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fff;
+    position: relative;
+}
+
+.ionic-industries-section .blue-text {
+    color: #007bff;
+}
+
+.ionic-industries-section h2::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.industry-card img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.industry-card p {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .ionic-industries-section h2 {
+        font-size: 26px;
+    }
+
+    .industry-card img {
+        height: 50px;
+    }
+
+    .industry-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 30px;
+    }
+}
+
+.ionic-industries-section {
+    width: 100%;
+    padding: 60px 5%;
+    background-color: #2f363d;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ionic-industries-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #fff;
+    position: relative;
+}
+
+.ionic-industries-section .blue-text {
+    color: #007bff;
+}
+
+.ionic-industries-section h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.industry-card img {
+    height: 45px;
+    margin-bottom: 8px;
+}
+
+.industry-card p {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .ionic-industries-section h2 {
+        font-size: 24px;
+    }
+
+    .industry-grid {
+        gap: 20px;
+    }
+
+    .industry-card img {
+        height: 40px;
+    }
+
+    .industry-card p {
+        font-size: 13px;
+    }
+}
+
+.ionic-rely-section {
+    background-color: #f8f9fa;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.ionic-rely-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #0b1c39;
+}
+
+.ionic-rely-section .blue-text {
+    color: #007bff;
+}
+
+.rely-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.rely-card {
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.rely-card:hover {
+    transform: translateY(-5px);
+}
+
+.rely-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0b1c39;
+}
+
+.rely-card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.rely-button {
+    text-align: center;
+}
+
+.rely-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Force 2 columns */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .rely-grid {
+        grid-template-columns: 1fr;
+        /* Stack for mobile */
+    }
+}
+
+.ionic-rely-section {
+    width: 100vw;
+    padding: 80px 5%;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ionic-rely-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 50px;
+}
+
+.rely-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.rely-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.rely-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0b1c39;
+}
+
+.rely-card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.rely-button {
+    margin-top: 40px;
+}
+
+.rely-button .flutter-btn {
+    padding: 14px 28px;
+}
+
+@media screen and (max-width: 768px) {
+    .ionic-rely-section h2 {
+        font-size: 26px;
+    }
+
+    .rely-grid {
+        gap: 20px;
+    }
+}
+
+.rely-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .rely-grid {
+        grid-template-columns: 1fr;
+        /* Stack for small screens */
+        gap: 20px;
+    }
+}
+
+.ionic-rely-section {
+    width: 100vw;
+    padding: 80px 5%;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.rely-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: left;
+    color: #1e1e1e;
+}
+
+.rely-card:hover {
+    background-color: #007bff;
+    /* Blue background */
+    color: #ffffff;
+    /* White text */
+}
+
+.rely-card:hover h3,
+.rely-card:hover p {
+    color: #ffffff;
+}
+
+.rely-card h3,
+.rely-card p {
+    transition: color 0.3s ease;
+}
+
+.ionic-rely-section {
+    width: 100%;
+    padding: 80px 5%;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ionic-rely-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 50px;
+}
+
+.ionic-rely-section .blue-text {
+    color: #007bff;
+}
+
+.rely-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on large */
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rely-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: left;
+    color: #1e1e1e;
+}
+
+.rely-card:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.rely-card:hover h3,
+.rely-card:hover p {
+    color: #ffffff;
+}
+
+.rely-card h3,
+.rely-card p {
+    transition: color 0.3s ease;
+}
+
+.rely-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0b1c39;
+}
+
+.rely-card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.rely-button {
+    margin-top: 40px;
+}
+
+.rely-button .flutter-btn {
+    padding: 14px 28px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 992px) {
+    .rely-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Still 2 columns on medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ionic-rely-section h2 {
+        font-size: 26px;
+    }
+
+    .rely-grid {
+        grid-template-columns: 1fr;
+        /* Stack for mobile */
+        gap: 20px;
+    }
+
+    .rely-card {
+        text-align: center;
+    }
+}

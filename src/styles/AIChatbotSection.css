@@ -1,0 +1,620 @@
+.aichatbot-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.aichatbot-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.aichatbot-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.aichatbot-left .blue-text {
+    color: #007bff;
+}
+
+.aichatbot-left p {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+}
+
+.aichatbot-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.aichatbot-btn:hover {
+    background-color: #0056b3;
+}
+
+.aichatbot-right {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.aichatbot-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aichatbot-equip-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 5%;
+    background-color: #f8f9fa;
+}
+
+.aichatbot-equip-left {
+    flex: 1;
+    min-width: 320px;
+    text-align: center;
+}
+
+.aichatbot-equip-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aichatbot-equip-right {
+    flex: 1;
+    min-width: 320px;
+    padding: 0 30px;
+}
+
+.aichatbot-equip-right h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 40px;
+}
+
+.aichatbot-equip-right .blue-text {
+    color: #007bff;
+}
+
+.aichatbot-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.aichatbot-feature-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.aichatbot-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.aichatbot-feature-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.aichatbot-feature-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0b1c39;
+    margin-bottom: 10px;
+}
+
+.aichatbot-feature-card p {
+    font-size: 14px;
+    color: #444;
+}
+
+.aichatbot-feature-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.aichatbot-feature-card:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0056b3;
+}
+
+.aichatbot-feature-card:hover h3,
+.aichatbot-feature-card:hover p {
+    color: #ffffff;
+}
+
+.aichatbot-feature-card:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.aichatbot-feature-card {
+    background-color: #007bff;
+    /* Blue background */
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    /* Set default text to white */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.aichatbot-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.aichatbot-feature-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+    /* Makes icon white */
+}
+
+.aichatbot-feature-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.aichatbot-feature-card p {
+    font-size: 14px;
+    color: white;
+}
+
+.aichatbot-custom-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background-color: #f9f9f9;
+}
+
+.aichatbot-custom-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.aichatbot-custom-left h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 10px;
+}
+
+.aichatbot-custom-left h2 .blue-text {
+    color: #007bff;
+}
+
+.aichatbot-custom-left h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.highlight-line {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    position: relative;
+    top: -6px;
+    margin-right: 10px;
+}
+
+.aichatbot-custom-left .subtitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.aichatbot-custom-left p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.aichatbot-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.aichatbot-list li {
+    font-size: 16px;
+    color: #0b1c39;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.aichatbot-list li span {
+    color: #000;
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+.aichatbot-start-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.aichatbot-start-btn:hover {
+    background-color: #0056b3;
+}
+
+.aichatbot-custom-right {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aichatbot-custom-right img {
+    max-width: 100%;
+    border-top-left-radius: 100px;
+}
+
+.aichatbot-innovation-section {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.aichatbot-innovation-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 10px;
+}
+
+.aichatbot-innovation-header .blue-text {
+    color: #007bff;
+}
+
+.aichatbot-innovation-header .underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 20px;
+}
+
+.aichatbot-innovation-header p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1e1e1e;
+    margin-bottom: 40px;
+}
+
+.aichatbot-innovation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.aichatbot-innovation-card {
+    background-color: #007bff;
+    padding: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.aichatbot-innovation-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.aichatbot-innovation-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.aichatbot-innovation-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.aichatbot-innovation-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    color: #0b1c39;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.aichatbot-innovation-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: filter 0.3s ease;
+}
+
+.aichatbot-innovation-card h3,
+.aichatbot-innovation-card p {
+    transition: color 0.3s ease;
+}
+
+/* 🔵 Hover Effect */
+.aichatbot-innovation-card:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.aichatbot-innovation-card:hover h3,
+.aichatbot-innovation-card:hover p {
+    color: #ffffff;
+}
+
+.aichatbot-innovation-card:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.aichatbot-innovation-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    color: #1e1e1e;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.aichatbot-innovation-card:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.aichatbot-innovation-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: filter 0.3s;
+}
+
+.aichatbot-innovation-card:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.aichatbot-innovation-card h3,
+.aichatbot-innovation-card p {
+    transition: color 0.3s;
+}
+
+.aichatbot-innovation-card:hover h3,
+.aichatbot-innovation-card:hover p {
+    color: #ffffff;
+}
+
+.aichatbot-innovation-section {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.aichatbot-innovation-section h2 {
+    font-size: 32px;
+    color: #0b1c39;
+    margin-bottom: 10px;
+}
+
+.aichatbot-innovation-section .blue-text {
+    color: #007bff;
+}
+
+.aichatbot-subtitle {
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.aichatbot-innovation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.aichatbot-innovation-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    color: #1e1e1e;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: 0.3s ease;
+    max-width: 100%;
+}
+
+.aichatbot-innovation-card:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.aichatbot-innovation-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: filter 0.3s ease;
+}
+
+.aichatbot-innovation-card:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.aichatbot-innovation-card h3,
+.aichatbot-innovation-card p {
+    transition: color 0.3s;
+}
+
+.aichatbot-innovation-card:hover h3,
+.aichatbot-innovation-card:hover p {
+    color: #ffffff;
+}
+
+.aichatbot-innovation-card {
+    background-color: #007bff;
+    /* Permanent blue background */
+    padding: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    /* White text */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.aichatbot-innovation-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+    /* Make icon white */
+}
+
+.aichatbot-innovation-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.aichatbot-innovation-card p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.aichatbot-industries-section {
+    background-color: #f9f9f9;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.aichatbot-industries-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+
+.aichatbot-industries-section .blue-text {
+    color: #007bff;
+}
+
+.aichatbot-industries-line {
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 40px auto;
+}
+
+.aichatbot-industries-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.industry-card {
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.industry-card:hover {
+    transform: translateY(-8px);
+}
+
+.industry-card img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.industry-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.aichatbot-industries-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* This centers the entire grid */
+}
+
+.aichatbot-industries-section {
+    text-align: center;
+}
+
+.aichatbot-industries-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.aichatbot-industries-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

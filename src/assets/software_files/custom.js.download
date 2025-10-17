@@ -1,0 +1,1699 @@
+//====================================
+//      Code added By Abhishek
+//====================================
+$(document).ready(function() {
+    $("html").niceScroll();
+    // $(body).hide();
+});
+
+
+//  $(window).scroll(function() {
+//         stickyHeader();
+//     });
+//     function stickyHeader() {
+//         if ($(this).scrollTop() > 1){
+//               $('body').addClass("sticky"); 
+//         } else { 
+//             $('body').removeClass("sticky"); 
+//         } 
+//     }
+
+  let lastScrollTop = 0;
+ 
+  window.addEventListener("scroll", function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop) {
+      // Scrolling down
+      document.body.classList.add('sticky');
+    } else {
+      // Scrolling up
+      document.body.classList.remove('sticky');
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+  });
+
+$('.menu-toggle').click(function(){
+    $(".nav-mob").toggleClass("mobile-nav");
+    $(this).toggleClass("is-active");
+});
+
+
+$('.dstep').mouseover(function(){
+    $(".bulb").addClass("bulbon"); 
+});
+
+$('.dstep').mouseout(function(){
+    $(".bulb").removeClass("bulbon"); 
+});
+
+
+$('#home-carousel-1').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:true,
+    navText: ["<img src='"+baseurl+"/images/icons/left.png'>","<img src='"+baseurl+"/images/icons/right.png'>"],
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+$('.casetestslide').owlCarousel({
+    loop:true,
+    margin:0,
+    autoplay:true,
+    nav:false, 
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+
+$('.relatedSlider').owlCarousel({
+    loop:true,
+    center:true,
+    margin:15,
+    autoplay:true,
+    nav:false, 
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
+
+$('.relatedSlider1').owlCarousel({
+    loop:false,
+    margin:25,
+    autoplay:false,
+    nav:true, 
+    // center:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+});
+
+$('.relatedSlider2').owlCarousel({
+    loop:true,
+    margin:25,
+    autoplay:true,
+    nav:true, 
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+});
+
+
+
+(function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+		
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+			
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+			
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+			
+			$self.data('countTo', data);
+			
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+			
+			// initialize the element with the starting value
+			render(value);
+			
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+				
+				render(value);
+				
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+				
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+					
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+			
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+	
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+	
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+
+
+$('#cust-story-slider').owlCarousel({
+    loop:false,
+    autoplay:false,
+    margin:10,
+    nav:true,
+    navText: ["<img src='"+baseurl+"/images/icons/left.png'>","<img src='"+baseurl+"/images/icons/right.png'>"],
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+
+$('#our-blogs-slider').owlCarousel({
+    loop:false,
+    autoplay:false,
+    margin:30,
+    dots:true,
+    nav:true,
+    navText: ["<img src='"+baseurl+"/images/icons/prev.png'>","<img src='"+baseurl+"/images/icons/next.png'>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
+$('#portfolio').owlCarousel({	
+    loop:false,	
+    autoplay:false,	
+    margin:10,	
+    dots:false,	
+    nav:true,	
+    navText: ["<img src='"+baseurl+"/images/icons/prev-white.png'>","<img src='"+baseurl+"/images/icons/next-red.png'>"],	
+    responsive:{	
+        0:{	
+            items:1	
+        },	
+        600:{	
+            items:1	
+        },	
+        1000:{	
+            items:1	
+        }	
+    }	
+});	
+
+$('#industry-slider').owlCarousel({	
+    loop:true,	
+    autoplay:true,	
+    autoplayTimeout : 2000,
+    margin:10,	
+    dots:false,	
+    nav:true,	
+    navText: ["<img src='"+baseurl+"/images/icons/prev.png'>","<img src='"+baseurl+"/images/icons/next.png'>"],	
+    responsive:{	
+        0:{	
+            items:1	
+        },	
+        600:{	
+            items:3	
+        },	
+        1000:{	
+            items:5	
+        }	
+    }	
+});
+
+$('#project-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots: true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1025:{
+            items:4
+        }
+    }
+});
+        
+$('#client-review-sm-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots: true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+/*
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    }
+});
+*/
+
+
+//===============================
+//      Code added By Rakesh
+//===============================
+
+//  Recaptcha responsive js for all pages===============================
+var width = $('.brochure__form__captcha mb-0').parent().width();
+if (width < 302) {
+	var scale = width / 302;
+	$('.brochure__form__captcha').css('transform', 'scale(' + scale + ')');
+	$('.brochure__form__captcha').css('-webkit-transform', 'scale(' + scale + ')');
+	$('.brochure__form__captcha').css('transform-origin', '0 0');
+	$('.brochure__form__captcha').css('-webkit-transform-origin', '0 0');
+}
+//  Recaptcha responsive js for all pages===============================
+
+//  Lazy loading js for all pages===============================
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img.lazy");    
+  var lazyloadThrottleTimeout;
+
+    function lazyload () {
+        if(lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+        }    
+    
+        lazyloadThrottleTimeout = setTimeout(function() {
+            var scrollTop = window.pageYOffset;
+            lazyloadImages.forEach(function(img) {
+                if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                }
+            });
+            if(lazyloadImages.length == 0) { 
+                document.removeEventListener("scroll", lazyload);
+                window.removeEventListener("resize", lazyload);
+                window.removeEventListener("orientationChange", lazyload);
+            }
+        }, 20);
+    }
+
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages;    
+
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazy");
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.classList.remove("lazy");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {  
+    var lazyloadThrottleTimeout;
+    lazyloadImages = document.querySelectorAll(".lazy");
+
+    function lazyload () {
+        if(lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+        }    
+    
+        lazyloadThrottleTimeout = setTimeout(function() {
+            var scrollTop = window.pageYOffset;
+            lazyloadImages.forEach(function(img) {
+                if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                }
+            });
+            if(lazyloadImages.length == 0) { 
+                document.removeEventListener("scroll", lazyload);
+                window.removeEventListener("resize", lazyload);
+                window.removeEventListener("orientationChange", lazyload);
+            }
+        }, 20);
+    }
+
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  }
+});
+
+//  #End Lazy loading js for all pages==========================
+
+$('#home-blog-carousel').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:true,
+    navText: ["<img src='"+baseurl+"/images/icons/left.png'>","<img src='"+baseurl+"/images/icons/right.png'>"],
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+$('#blockchain-partners-slider').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout : 2000,
+    margin:10,
+    nav:true,
+    navText: ["<img src='"+baseurl+"/images/icons/left.png'>","<img src='"+baseurl+"/images/icons/right.png'>"],
+    dots:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+});
+
+$('#news-slider-1').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:true,
+    navText: ["<img src='"+baseurl+"/images/icons/left.png'>","<img src='"+baseurl+"/images/icons/right.png'>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
+$('#dm-partner-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout : 2000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+});
+
+$('#trusted-partner-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout : 2000,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+});
+
+$('#itcon_apr6_caro').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots: false,
+    // navText: ["<img src='"+baseurl+"/images/icons/left.png'>","<img src='"+baseurl+"/images/icons/right.png'>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+
+/*============ Custom Software Page(s) ==================*/
+
+    $(document).ready(function(){
+        // $('li').on('click', function(){ 
+        //     $(this).siblings().removeClass('active');
+        //     $(this).addClass('active');
+        // });
+    });
+
+    $(document).ready(function(){
+        
+        // $('.dropdown-content-new li.column').on('click', function(){ 
+        //     $(this).removeClass('active');
+        // });
+        // $('.dropdown-content li.column').on('click', function(){ 
+        //     $(this).removeClass('active');
+        // });
+    });
+
+    // Bind keyup event on the input
+    $('#searchSoft1').keyup(function() {
+        // If value is not empty
+        if ($(this).val().length == 0) {
+            // Hide the element
+            $('#searchSoft1Result').hide();
+            $('#search-btn-banner').show(); 
+            $('#close-btn-banner').hide();
+        } else {
+            // Otherwise show it
+            $('#searchSoft1Result').show();
+            $('#close-btn-banner').show();
+            $('#search-btn-banner').hide(); 
+        }
+    }).keyup();
+
+    // Bind keyup event on the input
+    $('#searchSoft2').keyup(function() {
+        // If value is not empty
+        if ($(this).val().length == 0) {
+            // Hide the element
+            $('#search-btn-2').show();
+            $('#close-btn-2').hide();
+            $('#allsoftdiv').show();
+            $('#searchrightsoftdiv').hide();
+        } else {
+            // Otherwise show it
+            $('#close-btn-2').show();
+            $('#search-btn-2').hide();
+            $('#allsoftdiv').hide();
+            $('#searchrightsoftdiv').show();
+        }
+    }).keyup();
+
+    $(document).ready(function(){
+        $('#searchSoft1').keyup(function(){
+            var searchSoft1 = $('#searchSoft1').val();
+            $.ajax({
+                url:baseurl+'/main_ajax/software-search-assist1.php',
+                data:{searchSoft1:searchSoft1},
+                type: 'POST',
+                success:function(data){
+                    if(!data.error){
+                        $('#searchSoft1Result').html(data);
+                    }
+                }
+            });
+        });
+    });
+
+    $(document).ready(function(){
+        $('#searchSoft2').keyup(function() {
+            var searchSoft2 = $('#searchSoft2').val();
+            $.ajax({
+                url:baseurl+'/main_ajax/software-search-assist2.php',
+                data:{searchSoft2:searchSoft2},
+                type: 'POST',
+                success:function(data){
+                    if(!data.error){
+                        $('#searchrightsoftdiv_cont').html(data);
+                    }
+                }
+            });
+        });
+    });
+
+    function valuereset1() {
+        var inputvalue=document.getElementById('searchSoft1').value;
+        if(inputvalue=="") {
+            document.getElementById('searchSoft1').focus();
+        } else {
+            document.getElementById('searchSoft1Result').style.display='none';
+            document.getElementById('searchSoft1').value="";
+            document.getElementById('searchSoft1').blur();
+            document.getElementById('close-btn-banner').style.display='none';
+            document.getElementById('search-btn-banner').style.display='block';
+        }
+    }
+    function valuereset2() {
+        var inputvalue=document.getElementById('searchSoft2').value;
+        if(inputvalue=="") {
+            document.getElementById('searchSoft2').focus();
+        } else {
+            document.getElementById('searchSoft1Result').style.display='none';
+            document.getElementById('searchSoft2').value="";
+            document.getElementById('searchSoft2').blur();
+            document.getElementById('close-btn-2').style.display='none';
+            document.getElementById('search-btn-2').style.display='block';
+            document.getElementById('allsoftdiv').style.display='block';
+            document.getElementById('searchrightsoftdiv').style.display='none';
+        }
+    }
+
+/*============ #End Custom Software Page(s) ==================*/
+
+/*============ Start News Page(s) ==================*/
+    function gotoNewsSection() {
+        // Handler for .ready() called.
+        $('html, body').animate({scrollTop: $('#all-news').offset().top-75}, 'slow');
+    }
+
+    function newsPagination(pagenum) {
+        var fd = new FormData();
+        fd.append('pagenum',pagenum);
+
+        $.ajax({
+            url:baseurl+'/main_ajax/news-assist1.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#newslistdiv').html(data);
+                }
+            }
+        });
+    }
+
+    function newsSearchTag(searchTagkey,pagenum) {
+        var fd = new FormData();
+        fd.append('searchTagkey',searchTagkey);
+        fd.append('pagenum',pagenum);
+        $.ajax({
+            url:baseurl+'/main_ajax/news-assist2.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#newslistdiv').html(data);
+                }
+            }
+        });
+    }
+/*============ #End News Page(s) ==================*/
+
+/*============ Start Blogs Page(s) ==================*/
+
+    // $(document).ready(function () {
+    //     // Handler for .ready() called.
+    //     $('html, body').animate({scrollTop: $('#all-blogs').offset().top-75}, 'slow');
+    // });
+    function gotoBlogSection() {
+        // Handler for .ready() called.
+        $('html, body').animate({scrollTop: $('#all-blogs').offset().top-75}, 'slow');
+    }
+
+    function blogPagination(pagenum) {
+        var fd = new FormData();
+        fd.append('pagenum',pagenum);
+
+        $.ajax({
+            url:baseurl+'/main_ajax/blogs-assist1.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#blogslistdiv').html(data);
+                }
+            }
+        });
+    }
+
+
+
+    function blogSearchPagination(pagenum,searchkey) {
+        var fd = new FormData();
+        fd.append('pagenum',pagenum);
+        fd.append('searchkey',searchkey);
+
+        $.ajax({
+            url:baseurl+'/main_ajax/blogs-assist2.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#blogslistdiv').html(data);
+                }
+            }
+        });
+    }
+
+    function blogSearch() {
+        var fd = new FormData();
+        var searchkey=$('#blogSearchInput').val();
+        fd.append('searchkey',searchkey);
+
+        $.ajax({
+            url:baseurl+'/main_ajax/blogs-assist3.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#blogSearchInputDiv').html(data);
+                }
+            }
+        });
+    }
+
+    function blogSearchCategory(type,searchCatkey,pagenum) {
+        var fd = new FormData();
+        fd.append('searchCatkey',searchCatkey);
+        if(type==1) {
+            $.ajax({
+                url:baseurl+'/main_ajax/blogs-assist3.php',
+                data:fd,
+                contentType: false,
+                processData: false,
+                type: 'POST',
+                success:function(data){
+                    if(!data.error){
+                        $('#blogSearchInputDiv').html(data);
+                    }
+                }
+            });
+        } else if(type==2) {
+            fd.append('pagenum',pagenum);
+            $.ajax({
+                url:baseurl+'/main_ajax/blogs-assist4.php',
+                data:fd,
+                contentType: false,
+                processData: false,
+                type: 'POST',
+                success:function(data){
+                    if(!data.error){
+                        $('#blogslistdiv').html(data);
+                    }
+                }
+            });
+        }
+    }
+
+    function blogSearchTag(searchTagkey,pagenum) {
+        var fd = new FormData();
+        fd.append('searchTagkey',searchTagkey);
+        fd.append('pagenum',pagenum);
+        $.ajax({
+            url:baseurl+'/main_ajax/blogs-assist5.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#blogslistdiv').html(data);
+                }
+            }
+        });
+    }
+
+    function blogSearchDate(searchDateKey) {
+        var fd = new FormData();
+        fd.append('searchDateKey',searchDateKey);
+        $.ajax({
+            url:baseurl+'/main_ajax/blogs-assist3.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#blogslistdiv').html(data);
+                }
+            }
+        });
+    }
+
+    function blogSearchDatePg(searchDatekey,pagenum) {
+        var fd = new FormData();
+        fd.append('searchDatekey',searchDatekey);
+        fd.append('pagenum',pagenum);
+        $.ajax({
+            url:baseurl+'/main_ajax/blogs-assist7.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#blogslistdiv').html(data);
+                }
+            }
+        });
+    }
+
+
+/*============ #End Blogs Page(s) ==================*/
+
+
+
+/*============ Start Career Page(s) ==================*/
+
+
+
+
+/*============ #End Career Page(s) ==================*/
+
+
+
+/*============ Start CaseStudy Page(s) ==================*/
+    function gotoCaseStudySection() {
+        // Handler for .ready() called.
+        $('html, body').animate({scrollTop: $('#allCaseStudySec').offset().top-75}, 'slow');
+    }
+    function csPagination(pagenum) {
+        var fd = new FormData();
+        fd.append('pagenum',pagenum);
+
+        $.ajax({
+            url:baseurl+'/main_ajax/casestudy-assist1.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#cslistdiv').html(data);
+                }
+            }
+        });
+    }
+/*============ #End CaseStudy Page(s) ==================*/
+/*============ Start Portfolio Page(s) ==================*/
+    function gotoPortfolioSection() {
+        // Handler for .ready() called.
+        $('html, body').animate({scrollTop: $('#allPortfolioSec').offset().top-75}, 'slow');
+    }
+    function pfolPagination(pagenum) {
+        var fd = new FormData();
+        fd.append('pagenum',pagenum);
+
+        $.ajax({
+            url:baseurl+'/main_ajax/portfolio-assist1.php',
+            data:fd,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#pfollistdiv').html(data);
+                }
+            }
+        });
+    }
+/*============ #End Portfolio Page(s) ==================*/
+
+
+
+
+//  for blur valudation of form type 1
+function instvalidate1(opt,elemid) {
+    var thisid='#'+elemid+opt;
+    var getval=$(thisid).val();
+    var resultdiv='#resultGenForm'+opt;
+    $.ajax({
+        url:baseurl+'/main_ajax/blurvalidation1.php',
+        data:{opt:opt, elemid:elemid, getval:getval },
+        type: 'POST',
+        success:function(data){
+            if(!data.error){
+                $(resultdiv).html(data);
+            }
+        }
+    });
+}
+//  for blur valudation of form type 2
+function instvalidate2(opt,elemid) {
+    var thisid='#'+elemid+opt;
+    var getval=$(thisid).val();
+    var resultdiv='#resultGenForm'+opt;
+    $.ajax({
+        url:baseurl+'/main_ajax/blurvalidation2.php',
+        data:{opt:opt, elemid:elemid, getval:getval },
+        type: 'POST',
+        success:function(data){
+            if(!data.error){
+                $(resultdiv).html(data);
+            }
+        }
+    });
+}
+
+
+//  For Recaptcha widget - show and verify
+var custrecaptcha1response;
+var custrecaptcha2response;
+var custrecaptcha3response;
+var custrecaptcha4response;
+var custrecaptcha5response;
+var custrecaptcha6response;
+var CaptchaCallback = function() {
+    // if($("#custrecaptcha1").length != 0) {}
+        grecaptcha.render('custrecaptcha1', {'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5'});
+        grecaptcha.render('custrecaptcha2', {'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5'});
+        grecaptcha.render('custrecaptcha3', {'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5'});
+        grecaptcha.render('custrecaptcha4', {'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5'});
+        grecaptcha.render('custrecaptcha5', {'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5'});
+        grecaptcha.render('custrecaptcha6', {'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5'});
+};
+
+
+
+// var onloadCallback = function() {
+//     if($("#custrecaptcha1").length != 0) {
+//         custrecaptcha1response = grecaptcha.render('custrecaptcha1', {
+//           'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5',
+//           'theme' : 'light'
+//         });
+//     } else if($("#custrecaptcha2").length != 0) {
+//         custrecaptcha2response = grecaptcha.render('custrecaptcha2', {
+//           'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5',
+//           'theme' : 'light'
+//         });
+//     } else if($("#custrecaptcha3").length != 0) {
+//         custrecaptcha3response = grecaptcha.render('custrecaptcha3', {
+//           'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5',
+//           'theme' : 'light'
+//         });
+//     } else if($("#custrecaptcha4").length != 0) {
+//         custrecaptcha4response = grecaptcha.render('custrecaptcha4', {
+//           'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5',
+//           'theme' : 'light'
+//         });
+//     } else if($("#custrecaptcha5").length != 0) {
+//         custrecaptcha5response = grecaptcha.render('custrecaptcha5', {
+//           'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5',
+//           'theme' : 'light'
+//         });
+//     } else if($("#custrecaptcha6").length != 0) {
+//         custrecaptcha6response = grecaptcha.render('custrecaptcha6', {
+//           'sitekey' : '6LehD3IcAAAAABq3-rUdeaiuBB49R-FAsHJ9Eit5',
+//           'theme' : 'light'
+//         });
+//     }
+// };
+
+
+//  on submit valudation of form type 1
+function genForm1Submit() {
+    var custname = $('#custname1').val();
+    var custemail = $('#custemail1').val();
+    var custphone_prefix = $('input[name="custphone1_prefix_radio"]:checked').val();
+    var custphone = $('#custphone1').val();
+    var custcomment = $('#custcomment1').val();
+    // var recaptcha = $('#custrecaptcha1').val();
+    // var recaptcharesponse = $('#g-recaptcha-response').val();
+    // var recaptcharesponse = grecaptcha.getResponse(custrecaptcha1response);
+    var gCaptchaResponse = grecaptcha.getResponse(0);
+
+    $.ajax({
+        url: baseurl+'/main_ajax/form-validation1.php',
+        data:{custname1:custname, custemail1:custemail, custphone1_prefix:custphone_prefix, custphone1:custphone, custcomment1:custcomment, gCaptchaResponse:gCaptchaResponse },
+        type: 'POST',
+        success:function(data){
+            if(!data.error){
+                $('#resultGenForm1').html(data);
+            }
+        }
+    });
+}
+
+//  on submit valudation of form type 2
+function genForm2Submit() {
+    var fd = new FormData();
+    var files = $('#custfile2')[0].files[0];
+    var custname = $('#custname2').val();
+    var custemail = $('#custemail2').val();
+    var custphone_prefix = $('input[name="custphone2_prefix_radio"]:checked').val();
+    var custphone = $('#custphone2').val();
+    var custsubject = $('#custsubject2').val();
+    var custcomment = $('#custcomment2').val();
+    // var recaptcha = $('#custrecaptcha2').val();
+    var gCaptchaResponse = grecaptcha.getResponse(1);
+
+    fd.append('custfile2',files);
+    fd.append('custname2',custname);
+    fd.append('custemail2',custemail);
+    fd.append(' custphone2_prefix,', custphone_prefix,);
+    fd.append('custphone2',custphone);
+    fd.append('custsubject2',custsubject);
+    fd.append('custcomment2',custcomment);
+    fd.append('gCaptchaResponse',gCaptchaResponse);
+
+    $.ajax({
+        url: baseurl+'/main_ajax/form-validation1.php',
+        data:fd,
+        contentType: false,
+        processData: false,
+        type: 'POST',
+        success:function(data){
+            if(!data.error){
+                $('#resultGenForm2').html(data);
+            }
+        }
+    });
+}
+
+//  on submit valudation of form type 3
+function genForm3Submit() {
+    var custname = $('#custname3').val();
+    var custemail = $('#custemail3').val();
+    var custphone_prefix = $('input[name="custphone3_prefix_radio"]:checked').val();
+    var custphone = $('#custphone3').val();
+    var custbudget = $('#custbudget3').val();
+    var custcomment = $('#custcomment3').val();
+    // var recaptcha = $('#custrecaptcha3').val();
+    var gCaptchaResponse = grecaptcha.getResponse(2);
+
+    $.ajax({
+        url: baseurl+'/main_ajax/form-validation1.php',
+        data:{custname3:custname, custemail3:custemail, custphone3_prefix:custphone_prefix, custphone3:custphone, custbudget3:custbudget, custcomment3:custcomment, gCaptchaResponse:gCaptchaResponse },
+        type: 'POST',
+        success:function(data){
+            if(!data.error){
+                $('#resultGenForm3').html(data);
+            }
+        }
+    });
+}
+
+//  on submit valudation of form type 4
+function genForm4Submit() {
+    var custname = $('#custname4').val();
+    var custemail = $('#custemail4').val();
+    var custphone_prefix = $('input[name="custphone4_prefix_radio"]:checked').val();
+    var custphone = $('#custphone4').val();
+    var custcomment = $('#custcomment4').val();
+    // var recaptcha = $('#custrecaptcha4').val();
+    // var recaptcharesponse = grecaptcha.getResponse(custrecaptcha4response);
+    var gCaptchaResponse = grecaptcha.getResponse(3);
+
+    $.ajax({
+        url: baseurl+'/main_ajax/form-validation1.php',
+        data:{custname4:custname, custemail4:custemail, custphone4_prefix:custphone_prefix, custphone4:custphone, custcomment4:custcomment, gCaptchaResponse:gCaptchaResponse },
+        type: 'POST',
+        success:function(data){
+            if(!data.error){
+                $('#resultGenForm4').html(data);
+            }
+        }
+    });
+}
+
+//  on submit valudation of form type 5
+function genForm5Submit() {
+    var custname = $('#custname5').val();
+    var custemail = $('#custemail5').val();
+    var custphone_prefix = $('input[name="custphone5_prefix_radio"]:checked').val();
+    var custphone = $('#custphone5').val();
+    var custcomment = $('#custcomment5').val();
+    // var recaptcha = $('#custrecaptcha5').val();
+    // var recaptcharesponse = $('#g-recaptcha-response').val();
+    var gCaptchaResponse = grecaptcha.getResponse(4);
+
+    $.ajax({
+        url: baseurl+'/main_ajax/form-validation1.php',
+        data:{custname5:custname, custemail5:custemail, custphone5_prefix:custphone_prefix, custphone5:custphone, custcomment5:custcomment, gCaptchaResponse:gCaptchaResponse },
+        type: 'POST',
+        success:function(data){
+            if(!data.error){
+                $('#resultGenForm5').html(data);
+            }
+        }
+    });
+}
+
+//  on submit valudation of form type 6
+function genForm6Submit() {
+    var custname = $('#custname6').val();
+    var custemail = $('#custemail6').val();
+    var custphone_prefix = $('input[name="custphone6_prefix_radio"]:checked').val();
+    var custphone = $('#custphone6').val();
+    var custcomment = $('#custcomment6').val();
+    // var recaptcha = $('#custrecaptcha6').val();
+    // var recaptcharesponse = $('#g-recaptcha-response').val();
+    var gCaptchaResponse = grecaptcha.getResponse(5);
+
+    $.ajax({
+        url: baseurl+'/main_ajax/form-validation1.php',
+        data:{custname6:custname, custemail6:custemail, custphone6_prefix:custphone_prefix, custphone6:custphone, custcomment6:custcomment, gCaptchaResponse:gCaptchaResponse },
+        type: 'POST',
+        success:function(data){
+            if(!data.error){
+                $('#resultGenForm6').html(data);
+            }
+        }
+    });
+}
+
+//  captcha reload function
+function captcha_reload(formtype) {
+    var inputid='#custrecaptcha'+formtype;
+    var recaptchatextid='#custrecaptcha'+formtype+'text';
+    $(inputid).val('');
+    $.ajax({
+        url: baseurl+'/main_ajax/captcha-reload-assist1.php',
+        data:{formtype:formtype },
+        type: 'POST',
+        success:function(data){
+            if(!data.error){
+                $(recaptchatextid).html(data);
+            }
+        }
+    });
+}
+
+
+//  file selection checking for FORM type 2
+    function processdocFile2() {
+        var fileName = document.getElementById('custfile2').value;
+        var idxDot = fileName.lastIndexOf(".") + 1;
+        var extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
+        if (extFile=="doc" ||extFile=="docx" || extFile=="pdf" ){
+            document.getElementById('custfile2span').innerHTML='';
+            var size = parseFloat(document.getElementById('custfile2').files[0].size / 1024).toFixed(2);
+            if(size>2048) {
+                document.getElementById('custfile2').value='';
+                document.getElementById('custfile2span').innerHTML='File size must be within 2MB.';
+            }
+        } else {
+            document.getElementById('custfile2').value='';
+            document.getElementById('custfile2span').innerHTML='Only pdf/doc/docx file is allowed.';
+        }   
+    }
+
+
+
+
+//  Chatbot Assist JS
+    var input = document.getElementById("chatbot_msginput");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("chatbot_msginputbtn").click();
+      }
+    });
+
+    function chatbot_assist() {
+        var msg = $('#chatbot_msginput').val();
+        // alert(msg);
+        $.ajax({
+            url: baseurl+'/main_ajax/chatbot-assist1.php',
+            data:{ msg:msg },
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#chatbot_chatbody').append(data);
+                    $("#chatbot_chatbody").scrollTop(1000);
+                    $('#chatbot_msginput').val('');
+
+                    $.ajax({
+                        url: baseurl+'/main_ajax/chatbot-assist2.php',
+                        data:{ msg:msg },
+                        type: 'POST',
+                        success:function(data){
+                            if(!data.error){
+                                $('#chatbot_chatbody').append(data);
+                                $("#chatbot_chatbody").scrollTop(1000);
+                                $('#chatbot_msginput').val('');
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+//  Footer Subscribe assist JS
+    function fn_subscribe(opt) {
+        var inputid='#subsemail'+opt;
+        var subsemail = $(inputid).val();
+        // alert(subsemail);
+        $.ajax({
+            url: baseurl+'/main_ajax/subscribe-assist1.php',
+            data:{ opt:opt, subsemail:subsemail },
+            type: 'POST',
+            success:function(data){
+                if(!data.error){
+                    $('#resultfooter').html(data);
+                }
+            }
+        });
+    }
+
+
+
+
+/*****************************************/
+/*      Code added By Sanjib Sarkar      */
+/*****************************************/
+
+// $(window).on('wheel', function(e) {
+//     var delta = e.originalEvent.deltaY;
+//     if (delta > 0) {// going down
+//         // console.log('going down');
+//     } else {// going up
+//         // console.log('going up');
+//         if ($(this).scrollTop() > 500) {
+//             $('#back-to-top-1').fadeIn();
+//         } else {
+//             $('#back-to-top-1').fadeOut();
+//         }
+//     }
+  
+//     return false;
+// });
+
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+        $('#back-to-top-1').fadeIn();
+    } else {
+        $('#back-to-top-1').fadeOut();
+    }
+});
+// scroll body to 0px on click
+$(document).ready(function () {
+    $('#back-to-top-1').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+});
+
+/*============ Custom Software Page(s) ==================*/
+
+    $('#cs-service-slider').owlCarousel({
+        loop:false,
+        margin:25,
+        nav:true, 
+        navText: ["<img src='"+baseurl+"/images/icons/left.png'>","<img src='"+baseurl+"/images/icons/right.png'>"],
+        dots:false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+                    },
+            1000:{
+                items:2
+            }
+        }
+    });
+
+    $('#clients-review-slider').owlCarousel({
+        loop:false,
+        margin:25,
+        nav:false,   
+        dots:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+                    },
+            1000:{
+                items:2
+            }
+        }
+    });
+
+/*============ #End Custom Software Page(s) ==================*/
+/*============ Blog Page(s) ==================*/
+
+    // Reply box popup JS
+    $(document).ready(function(){
+        $(".reply-popup").click(function(){
+            $(".reply-box").toggle();
+        });
+    });
+/*============ #End Blog Page(s) ==================*/
+
+
+/*============ Schedule a Meeting ==================*/
+// $(document ).ready(function() {
+//     $(".select-time").niceScroll();
+// });
+
+
+// $(document).ready(function(){
+//   $(".time-zone-button").click(function(){
+//     $(".time-search-box").toggle();
+//   });
+// });
+/*============ #End Schedule a Meeting ==================*/
+
+
+/*************************************/
+/*      Code added By Saurabh      */
+/*************************************/
+$(document).ready(function() {
+
+
+// Add smooth scrolling to all links
+          $(".side_menu_list a").on('click', function(event) { 
+            if (this.hash !== "") { 
+              event.preventDefault(); 
+              var hash = this.hash; 
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top - 100
+              }, 800, function(){
+          
+              });
+            } // End if
+        });
+
+  //carousel
+
+  $('.bannerslide').owlCarousel({
+      loop:true,
+      margin:10, 
+      autoplay:true,
+      smartSpeed:2000,
+      autoplayTimeout:13000,
+      // animateOut: 'fadeOut',
+      autoplayHoverPause:false,
+      nav:true, 
+      dots:false,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  });
+
+
+//carousel
+
+  $('.partnerslide').owlCarousel({
+      loop:true,
+      margin:10, 
+      autoplay:true,
+      smartSpeed:500,
+      autoplayTimeout:3500,
+      nav:false, 
+      dots:false,
+      responsive:{
+          0:{
+              items:2
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:4
+          }
+      }
+  });
+
+  //portfoliodetails
+  // $('.portdetailsbanner').owlCarousel({
+  //     loop:true,
+  //     margin:10, 
+  //     autoplay:true, 
+  //     autoplayTimeout:3500,
+  //     nav:false, 
+  //     dots:true,
+  //     responsive:{
+  //         0:{
+  //             items:1
+  //         },
+  //         600:{
+  //             items:1
+  //         },
+  //         1000:{
+  //             items:1
+  //         }
+  //     }
+  // });
+
+//chatarea
+$(".chatarea").click(function(){
+  $(".chatbotholder").addClass('chatbotholderadd');
+})
+
+$(".close").click(function(){
+  $(this).parents(".chatbotholder").removeClass('chatbotholderadd');
+})
+
+// fancybox
+$('[data-fancybox="gallery"]').fancybox({
+  // Options will go here
+});
+
+  //window scroll
+  $(window).scroll(function() {
+    var elmnt = document.getElementById("section");
+    // alert(elmnt);
+  });
+ 
+
+
+//on page scroll left side actove change
+var lastId,
+    topMenu = $(".side_menu_list"),
+    topMenuHeight = topMenu.outerHeight(),
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+ 
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top - 68;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 300);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){ 
+  var windowHeight = $(window).height();
+  var windowHeightMid = (windowHeight/2); 
+  var fromTop = $(this).scrollTop()+windowHeightMid; 
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   }); 
+   cur = cur[cur.length-1];
+
+   var id = cur && cur.length ? cur[0].id : "";
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href='#"+id+"']").parent().addClass("active");
+   }                   
+}); 
+
+});
+
+
+ $(window).scroll(function () {
+  
+  if($(window).scrollTop() <20)
+     { 
+      $(".side_menu_list li:first-child").addClass("active1"); 
+     } 
+     else{ 
+      $(".side_menu_list li:first-child").removeClass("active1"); 
+     }
+});
+
+// Abhishek JS
+
+$('#user-agency').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+$('#agency-partner-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
+$('#case-studies-slider').owlCarousel({
+    loop:false,
+    autoplay:false,
+    margin:25,
+    dots:false,
+    nav:true,
+    navText: ["<img src='"+baseurl+"/images/icons/prev-white.png'>","<img src='"+baseurl+"/images/icons/next-red.png'>"],
+    responsive:{
+        0:{
+            items:1,
+            loop:true,
+    autoplay:true,
+    smartSpeed:500,
+      autoplayTimeout:3500,
+      nav:false, 
+      dots:true,
+        },
+        600:{
+            items:1,
+            
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+
+
+
+
+
+
+
+
+    /*=============================================
+    =               Scroll to top                 =
+    =============================================*/
+    function scrollToTop() {
+        var $scrollUp = $('#scroll-top'),
+            $lastScrollTop = 0,
+            $window = $(window);
+
+        $window.on('scroll', function () {
+            var st = $(this).scrollTop();
+            if (st > $lastScrollTop) {
+                $scrollUp.removeClass('show');
+            } else {
+                if ($window.scrollTop() > 200) {
+                    $scrollUp.addClass('show');
+                } else {
+                    $scrollUp.removeClass('show');
+                }
+            }
+            $lastScrollTop = st;
+        });
+
+        $scrollUp.on('click', function (evt) {
+            $('html, body').animate({scrollTop: 0}, 600);
+            evt.preventDefault();
+        });
+    }
+    scrollToTop();
+
+

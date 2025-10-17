@@ -1,0 +1,461 @@
+.woo-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.woo-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.woo-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.woo-left .blue-text {
+    color: #007bff;
+}
+
+.woo-left p {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+}
+
+.woo-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.woo-btn:hover {
+    background-color: #0056b3;
+}
+
+.woo-right {
+    flex: 1;
+    min-width: 320px;
+    text-align: center;
+}
+
+.woo-right img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.woo-ideal-section {
+    padding: 60px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.woo-ideal-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #0b1c39;
+    margin-bottom: 10px;
+}
+
+.woo-underline {
+    width: 60px;
+    height: 2px;
+    background-color: #007bff;
+    margin: 0 auto 40px;
+    border: none;
+}
+
+.woo-ideal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.woo-ideal-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 30px 20px;
+    transition: 0.3s ease;
+}
+
+.woo-ideal-card:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.woo-ideal-card:hover a {
+    color: #fff;
+}
+
+.woo-ideal-card img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.woo-ideal-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.woo-ideal-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.woo-discover {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.woo-discover:hover {
+    text-decoration: underline;
+}
+
+.woo-ideal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.woo-ideal-card {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.woo-ideal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.woo-ideal-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+    /* turns icon white */
+}
+
+.woo-ideal-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.woo-ideal-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+.woo-discover {
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.woo-services-section {
+    padding: 80px 5%;
+    background: url("../assets/woo-bg.jpg") no-repeat center center / cover;
+    color: #fff;
+    text-align: center;
+}
+
+.woo-services-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.woo-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.woo-service-card {
+    background-color: white;
+    color: #000;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.woo-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.woo-service-card img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.woo-service-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0b1c39;
+}
+
+.woo-service-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.woo-explore {
+    color: #f25c05;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.woo-explore:hover {
+    text-decoration: underline;
+}
+
+.woo-service-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.woo-service-card:hover {
+    background-color: #007bff;
+    /* Blue background on hover */
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.woo-service-card:hover h3,
+.woo-service-card:hover p,
+.woo-service-card:hover .woo-explore {
+    color: #fff;
+    /* Text becomes white on hover */
+}
+
+.woo-service-card img {
+    height: 50px;
+    margin-bottom: 15px;
+    transition: filter 0.3s ease;
+}
+
+.woo-service-card:hover img {
+    filter: brightness(0) invert(1);
+    /* Make icons white on blue */
+}
+
+/* WooCommerce Services Section */
+.woo-services-section {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.woo-services-section h2 {
+    font-size: 36px;
+    color: #0b1c39;
+    margin-bottom: 40px;
+}
+
+.woo-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.woo-service-card {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+}
+
+.woo-service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+    /* Make orange icon white */
+}
+
+.woo-service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.woo-service-card p {
+    font-size: 16px;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.woo-explore {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.woo-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.woo-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 30px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+    .woo-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .woo-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.woo-industries-section {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.woo-industries-section h2 {
+    font-size: 32px;
+    color: #0b1c39;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.woo-industries-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    border: none;
+    margin: 0 auto 40px;
+}
+
+.woo-industries-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.woo-industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.woo-industry-card img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.woo-industry-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.woo-benefit-section {
+    background-color: #f5f5f5;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.woo-benefit-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.woo-benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.woo-benefit-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.woo-benefit-card:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.woo-benefit-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.woo-benefit-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}

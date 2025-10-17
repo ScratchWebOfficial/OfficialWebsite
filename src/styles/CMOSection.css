@@ -1,0 +1,871 @@
+.cto-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.cto-hero-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.cto-hero-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b1c39;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.cto-hero-left .blue-text {
+    color: #007bff;
+}
+
+.cto-hero-left p {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.cto-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cto-btn:hover {
+    background-color: #0056b3;
+}
+
+.cto-hero-right {
+    flex: 1;
+    text-align: center;
+}
+
+.cto-hero-right img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .cto-hero-left h1 {
+        font-size: 36px;
+    }
+
+    .cto-hero-left p {
+        font-size: 16px;
+    }
+
+    .cto-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cto-hero-right {
+        margin-top: 30px;
+    }
+
+    .cto-hero-right img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.cto-service-section {
+    text-align: center;
+    padding: 60px 5%;
+    background-color: #fff;
+}
+
+.cto-service-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cto-service-section .blue-text {
+    color: #007bff;
+}
+
+.cto-service-section .orange-text {
+    color: #ff6600;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.cto-service-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.service-description {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #222;
+}
+
+.talk-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.talk-btn:hover {
+    background-color: #0056b3;
+}
+
+.cto-service-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.cto-service-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cto-service-section .blue-text {
+    color: #007bff;
+}
+
+.cto-service-section .orange-text {
+    color: #ff6600;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cto-service-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.service-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #222;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.talk-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.talk-btn:hover {
+    background-color: #0056b3;
+}
+
+.cto-service-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.cto-service-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cto-service-section .blue-text {
+    color: #007bff;
+}
+
+.cto-service-section .orange-text {
+    color: #ff6600;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cto-service-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.service-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #222;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.talk-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.talk-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .cto-service-image {
+        max-width: 320px;
+    }
+
+    .cto-service-section h2 {
+        font-size: 28px;
+    }
+
+    .service-description {
+        font-size: 14px;
+    }
+}
+
+.talk-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.cto-expect-section {
+    width: 100%;
+    padding: 80px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.expect-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.expect-underline {
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 12px auto 0 auto;
+}
+
+.expect-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.expect-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 40px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.expect-card img {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.expect-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.expect-card p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.expect-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .expect-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expect-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .expect-heading {
+        font-size: 28px;
+    }
+}
+
+.expect-card:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.expect-card:hover h3,
+.expect-card:hover p {
+    color: #fff;
+}
+
+.expect-card:hover img {
+    filter: brightness(0) invert(1);
+    /* makes orange icon white */
+}
+
+.expect-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 40px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.expect-card:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.expect-card:hover h3,
+.expect-card:hover p {
+    color: #ffffff;
+}
+
+.expect-card h3 {
+    color: #222222;
+    transition: color 0.3s ease;
+}
+
+.expect-card p {
+    color: #333333;
+    transition: color 0.3s ease;
+}
+
+.expect-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: #007bff;
+    /* Blue background */
+    color: #ffffff;
+    /* White text */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #0056b3;
+}
+
+/* Ensure headings and paragraphs are white */
+.expect-card h3,
+.expect-card p {
+    color: #ffffff;
+}
+
+/* Optional: Invert icon images to white */
+.expect-card img {
+    height: 60px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+    /* makes icon white */
+}
+
+.cto-progress-section {
+    background-color: #1f242d;
+    color: #fff;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.cto-progress-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.cto-progress-section .blue-text {
+    color: #007bff;
+}
+
+.cto-progress-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.progress-card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 30px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.progress-card:hover {
+    transform: translateY(-8px);
+}
+
+.progress-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    filter: brightness(0) saturate(100%) invert(40%) sepia(98%) hue-rotate(180deg);
+    /* blue tint */
+}
+
+.progress-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.progress-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.progress-card:hover {
+    transform: translateY(-8px);
+    background-color: #007bff;
+    /* Blue background on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+.progress-card:hover h3,
+.progress-card:hover p {
+    color: #fff;
+}
+
+.progress-card:hover img {
+    filter: brightness(0) invert(1);
+    /* Turn icon white */
+}
+
+.cto-service-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.cto-hero-right img {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.cto-hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-card:hover,
+.expect-card:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.cto-techstack-section {
+    background-color: #f7f7f7;
+    padding: 80px 5% 60px;
+    text-align: center;
+}
+
+.cto-techstack-section h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.cto-techstack-section .blue-text {
+    color: #007bff;
+}
+
+.cto-techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.cto-tech-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.cto-tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cto-tech-card img {
+    height: 48px;
+    margin-bottom: 15px;
+}
+
+.cto-tech-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.cto-tech-card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+    min-height: 90px;
+}
+
+.arrow-btn {
+    background-color: #ff5a00;
+    color: white;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.talk-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.talk-btn:hover {
+    background-color: #0056b3;
+}
+
+.cto-techstack-section {
+    background-color: #f7f7f7;
+    padding: 80px 5% 60px;
+    text-align: center;
+}
+
+.cto-techstack-section h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.cto-techstack-section .blue-text {
+    color: #007bff;
+}
+
+.cto-techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.cto-tech-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.cto-tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cto-tech-card img {
+    height: 48px;
+    margin-bottom: 15px;
+}
+
+.cto-tech-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.cto-tech-card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+    min-height: 90px;
+}
+
+.arrow-btn {
+    background-color: #ff5a00;
+    color: white;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.talk-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.talk-btn:hover {
+    background-color: #0056b3;
+}
+
+.cto-techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns per row */
+    gap: 40px;
+    justify-items: center;
+    /* horizontally center each card */
+    max-width: 1200px;
+    margin: 40px auto;
+    /* center the whole grid */
+    padding: 0 20px;
+}
+
+.cto-tech-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.cto-tech-card:hover {
+    background-color: #007bff;
+    /* hover blue */
+    color: #fff;
+}
+
+.cto-tech-card:hover .arrow-btn {
+    background-color: #fff;
+    color: #007bff;
+}
+
+.cto-tech-card {
+    background-color: #007bff;
+    /* Blue background */
+    color: #fff;
+    /* White text */
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cto-tech-card img {
+    width: 120px;
+    /* Increase image size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.cto-tech-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.cto-tech-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #f0f8ff;
+    /* light shade for better contrast */
+}
+
+.arrow-btn {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+
+/* Progress Section - Full Width and Centered */
+.cto-progress-section {
+    width: 100%;
+    padding: 80px 5%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.cto-progress-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 50px;
+}
+
+.cto-progress-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.progress-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 380px;
+    flex: 1 1 300px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.progress-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Tech Stack Section - Full Width and Centered */
+.cto-techstack-section {
+    width: 100%;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.cto-techstack-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 50px;
+}
+
+.cto-techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.cto-tech-card {
+    background-color: #007bff;
+    /* blue permanently */
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.cto-tech-card:hover {
+    transform: translateY(-10px);
+}
+
+.cto-tech-card img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}

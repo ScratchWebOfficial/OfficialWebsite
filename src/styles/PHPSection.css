@@ -1,0 +1,466 @@
+.phpframework-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.phpframework-hero-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.phpframework-hero-left h1 {
+    font-size: 52px;
+    font-weight: 800;
+    color: #0b1c39;
+    line-height: 1.2;
+}
+
+.phpframework-hero-left .blue-text {
+    color: #007bff;
+}
+
+.phpframework-hero-left p {
+    font-size: 18px;
+    color: #1e1e1e;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.phpframework-hero-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.phpframework-hero-btn:hover {
+    background-color: #0056d2;
+}
+
+.phpframework-hero-right {
+    flex: 1;
+    min-width: 320px;
+    text-align: center;
+}
+
+.phpframework-hero-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.phpframework-solutions-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.phpframework-solutions-left {
+    flex: 1;
+    min-width: 320px;
+    padding-right: 40px;
+}
+
+.phpframework-solutions-left .highlight-text {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.phpframework-solutions-left h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e1e1e;
+    line-height: 1.4;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 20px 0;
+}
+
+.phpframework-solutions-left h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.phpframework-solutions-left p {
+    font-size: 16px;
+    color: #222;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.phpframework-solutions-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.phpframework-solutions-btn:hover {
+    background-color: #0056d2;
+}
+
+.phpframework-solutions-right {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.phpframework-solutions-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.phpframework-services-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 5%;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.phpframework-service-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 32%;
+    text-align: left;
+}
+
+.phpframework-service-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.phpframework-service-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1e1e1e;
+    margin-bottom: 12px;
+}
+
+.phpframework-service-card .blue-text {
+    color: #007bff;
+}
+
+.phpframework-service-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.phpframework-tick-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 5%;
+    flex-wrap: wrap;
+    background-color: #fff;
+    gap: 40px;
+}
+
+.tick-left {
+    flex: 1;
+    min-width: 320px;
+}
+
+.tick-left h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+
+.blue-text {
+    color: #007bff;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 20px 0;
+}
+
+.tick-subtext {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.tick-left img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.tick-right {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tick-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tick-feature img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.tick-feature h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.tick-feature p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #222;
+}
+
+.tick-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.tick-btn:hover {
+    background-color: #0056d2;
+}
+
+.phpframework-cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 5%;
+    background-color: #fff;
+    gap: 30px;
+}
+
+.phpframework-card {
+    flex: 1;
+    min-width: 220px;
+    max-width: 23%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.phpframework-card:hover {
+    transform: translateY(-5px);
+}
+
+.phpframework-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.phpframework-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 12px;
+}
+
+.phpframework-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.phpframework-cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 5%;
+    background-color: #fff;
+    gap: 30px;
+}
+
+.phpframework-card {
+    flex: 1;
+    min-width: 220px;
+    max-width: 23%;
+    background-color: #007bff;
+    /* Blue background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease;
+    color: white;
+    /* White text */
+}
+
+.phpframework-card:hover {
+    transform: translateY(-5px);
+}
+
+.phpframework-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+    /* Invert icon color for white theme */
+}
+
+.phpframework-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.phpframework-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+.phpframework-development-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: #ffffff;
+}
+
+.phpframework-development-left {
+    flex: 1;
+    min-width: 320px;
+}
+
+.phpframework-development-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.phpframework-development-right {
+    flex: 1;
+    min-width: 320px;
+}
+
+.highlight-text {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.phpframework-development-right h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 20px 0;
+}
+
+.phpframework-development-right h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 16px;
+}
+
+.phpframework-development-right p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.phpframework-development-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.phpframework-development-btn:hover {
+    background-color: #0056d2;
+}
+
+@media (max-width: 991px) {
+    .phpframework-development-section {
+        flex-direction: column;
+        padding: 60px 5%;
+    }
+
+    .phpframework-development-left,
+    .phpframework-development-right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .phpframework-development-right h2 {
+        font-size: 28px;
+    }
+
+    .phpframework-development-right h4 {
+        font-size: 15px;
+    }
+
+    .phpframework-development-right p {
+        font-size: 14px;
+    }
+
+    .phpframework-development-btn {
+        margin-top: 20px;
+    }
+}

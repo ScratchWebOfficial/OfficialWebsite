@@ -1,0 +1,736 @@
+/* === Hero Section === */
+.android-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: #fff;
+    flex-wrap: wrap;
+}
+
+.android-hero-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.android-hero-left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.android-hero-left .highlight {
+    color: #1677FF;
+}
+
+.android-hero-left p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+.android-hero-btn {
+    background-color: #1677FF;
+    color: white;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.android-hero-btn:hover {
+    background-color: #005ec2;
+}
+
+.android-hero-right {
+    flex: 1;
+    text-align: center;
+}
+
+.android-hero-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* === Benefits Section === */
+.android-benefits-section {
+    padding: 4rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.android-benefits-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.android-benefits-section .blue-text {
+    color: #1677FF;
+}
+
+.android-benefits-section .underline {
+    width: 60px;
+    height: 3px;
+    background-color: #1677FF;
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+}
+
+.android-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.android-benefit-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.android-benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.android-icon {
+    font-size: 2rem;
+    color: #f97316;
+    /* orange color */
+    margin-bottom: 1rem;
+}
+
+.android-benefit-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.android-benefit-card p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.android-benefit-card a {
+    color: #1677FF;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.android-benefits-cta {
+    margin-top: 3rem;
+}
+
+.android-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+    .android-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .android-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.android-services-section {
+    background: #2b2f36;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.android-services-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.android-services-section .blue-text {
+    color: #1677FF;
+}
+
+.android-services-section .underline {
+    width: 60px;
+    height: 3px;
+    background-color: #1677FF;
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+}
+
+.android-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.android-service-card {
+    background: #fff;
+    color: #111;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.android-service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.android-service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.android-service-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.android-service-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.android-service-card a {
+    color: #f97316;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .android-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .android-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === Android Tech Stack Section === */
+.android-techstack-section {
+    background: #f9fbfd;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.android-techstack-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.android-techstack-section .underline {
+    width: 60px;
+    height: 3px;
+    background-color: #1677FF;
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+}
+
+.android-techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.android-tech-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 180px;
+}
+
+.android-tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.android-tech-card img {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.android-tech-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.android-techstack-cta {
+    margin-top: 3rem;
+}
+
+.android-tech-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.android-tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.android-tech-card img {
+    width: 100%;
+    height: auto;
+    max-height: 140px;
+    /* adjust as needed for best fit */
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.android-tech-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.android-tech-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.android-tech-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* === Industries Served Section === */
+.android-industries-section {
+    background: #d8ebff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.android-industries-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.android-industries-section .underline {
+    width: 60px;
+    height: 3px;
+    background-color: #1677FF;
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+}
+
+.android-industries-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.android-industry-card {
+    text-align: center;
+    max-width: 160px;
+}
+
+.android-industry-card img {
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.android-industry-card p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #111;
+}
+
+/* === Why Rely On Us Section === */
+.android-rely-section {
+    background: #f2f2f2;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.android-rely-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.android-rely-section .blue-text {
+    color: #1677FF;
+}
+
+.android-rely-section .underline {
+    width: 60px;
+    height: 3px;
+    background-color: #1677FF;
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+}
+
+.android-rely-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.android-rely-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.android-rely-card:hover {
+    transform: translateY(-5px);
+}
+
+.android-rely-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.android-rely-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.android-rely-btn-container {
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .android-rely-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.android-casestudy-section {
+    background: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.android-casestudy-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.android-casestudy-wrapper {
+    margin-top: 3rem;
+    background: #b5e3ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    position: relative;
+}
+
+.android-casestudy-card {
+    background: #ade1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.android-casestudy-image img {
+    max-width: 220px;
+    border-radius: 15px;
+}
+
+.android-casestudy-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.android-casestudy-content h3 {
+    font-size: 1.3rem;
+    color: #f26522;
+    margin-bottom: 0.5rem;
+}
+
+.android-casestudy-content .small-underline {
+    width: 50px;
+    height: 2px;
+    background: #007bff;
+    margin-bottom: 1rem;
+}
+
+.android-casestudy-content p {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+}
+
+.android-casestudy-content a {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.android-casestudy-content a .arrow {
+    color: #f26522;
+    margin-left: 5px;
+}
+
+.android-casestudy-arrow {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #f26522;
+    user-select: none;
+}
+
+.android-casestudy-arrow.left {
+    margin-right: 1.5rem;
+}
+
+.android-casestudy-arrow.right {
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .android-casestudy-card {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .android-casestudy-content {
+        text-align: center;
+    }
+
+    .android-casestudy-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .android-casestudy-image img {
+        max-width: 100%;
+    }
+}
+
+.android-casestudy-section {
+    background: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.android-casestudy-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.android-casestudy-wrapper {
+    margin-top: 3rem;
+    background: #b5e3ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    position: relative;
+}
+
+.android-casestudy-card {
+    background: #ade1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.android-casestudy-image img {
+    max-width: 220px;
+    border-radius: 15px;
+}
+
+.android-casestudy-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.android-casestudy-content h3 {
+    font-size: 1.3rem;
+    color: #f26522;
+    margin-bottom: 0.5rem;
+}
+
+.android-casestudy-content .small-underline {
+    width: 50px;
+    height: 2px;
+    background: #007bff;
+    margin-bottom: 1rem;
+}
+
+.android-casestudy-content p {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+}
+
+.android-casestudy-content a {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.android-casestudy-content a .arrow {
+    color: #f26522;
+    margin-left: 5px;
+}
+
+.android-casestudy-arrow {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #f26522;
+    user-select: none;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .android-casestudy-card {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .android-casestudy-content {
+        text-align: center;
+    }
+
+    .android-casestudy-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .android-casestudy-image img {
+        max-width: 100%;
+    }
+}
+
+.android-service-card {
+    background-color: #1677ff;
+    /* blue background */
+    color: #ffffff;
+    /* white text */
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 102, 255, 0.2);
+}
+
+.android-service-card h3 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.android-service-card p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #e5e5e5;
+}
+
+.android-service-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.android-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 102, 255, 0.3);
+}
+
+.android-benefit-card {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.android-benefit-card:hover {
+    background-color: #1677ff;
+    /* blue on hover */
+    color: #fff;
+}
+
+.android-benefit-card:hover h3,
+.android-benefit-card:hover p,
+.android-benefit-card:hover a,
+.android-benefit-card:hover .android-icon {
+    color: #ffffff;
+}
+
+.android-rely-card {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.android-rely-card:hover {
+    background-color: #1677ff;
+    /* blue on hover */
+    color: #fff;
+}
+
+.android-rely-card:hover h3,
+.android-rely-card:hover p {
+    color: #ffffff;
+}

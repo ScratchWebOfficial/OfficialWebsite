@@ -1,0 +1,250 @@
+.casestudy-hero-section {
+    background-color: #fff;
+    padding: 80px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.casestudy-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .casestudy-hero-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.casestudy-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.casestudy-left h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.highlight-blue {
+    color: #0075ff;
+}
+
+.bold-black {
+    color: #0c2239;
+}
+
+.casestudy-subtext {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.casestudy-button {
+    background-color: #0075ff;
+    color: white;
+    font-size: 15px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.casestudy-button:hover {
+    background-color: #005ed8;
+}
+
+.casestudy-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.casestudy-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .casestudy-hero-section {
+        padding: 60px 16px;
+    }
+}
+
+.casestudy-projects-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content .category {
+    color: #0075ff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.project-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0c2239;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 14px;
+    color: #333;
+}
+
+.startproject-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.startproject-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.startproject-title .contact-label {
+    color: #0075ff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.startproject-title h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.blue-line {
+    width: 60px;
+    height: 3px;
+    background-color: #0075ff;
+    margin-bottom: 30px;
+}
+
+.startproject-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.startproject-form input,
+.startproject-form textarea,
+.startproject-form select {
+    padding: 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 100%;
+    flex: 1;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.phone-row {
+    align-items: center;
+}
+
+.country-code {
+    max-width: 120px;
+}
+
+.captcha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.captcha input {
+    width: 20px;
+    height: 20px;
+}
+
+.captcha img {
+    height: 40px;
+}
+
+.send-btn {
+    background-color: #0075ff;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-weight: 600;
+    width: fit-content;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.send-btn:hover {
+    background-color: #005ed8;
+}
