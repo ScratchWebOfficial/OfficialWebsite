@@ -5,7 +5,7 @@ import careerhighlight from "../assets/careerhighlight.png";
 import perksimage from "../assets/perksimage.png";
 
 const jobList = [
-    {
+     {
         title: "Business Development Executive",
         location: "Kolkata",
         department: "Marketing",
@@ -15,16 +15,8 @@ const jobList = [
         description:
             "Wordsys is hiring passionate Business Development Executives who can work with our Marketing and Sales teams...",
     },
-    {
-        title: "Wordpress Developer",
-        location: "Kolkata",
-        department: "Development",
-        experience: "3-5 Years",
-        skills: "development, programming, design",
-        date: "20 December, 2021",
-        description:
-            "We are looking for a WordPress Expert who would ace in designing interactive functional websites and themes...",
-    },
+
+    
     {
         title: "Backend Developer",
         location: "Kolkata",
